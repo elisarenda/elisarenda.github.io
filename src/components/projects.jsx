@@ -14,9 +14,9 @@ class Projects extends Component {
 				<div className="projects-grid">
 					{/* Project 1 */}
 					<Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-						<CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
+						<CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project 1</CardTitle>
 						<CardText>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+							blablabla
 						</CardText>
 						<CardActions border>
 							<Button colored>GitHub</Button>
@@ -29,9 +29,9 @@ class Projects extends Component {
 					</Card>
 					{/* Project 2 */}
 					<Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-						<CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
+						<CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project 2</CardTitle>
 						<CardText>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+						blablabla
 						</CardText>
 						<CardActions border>
 							<Button colored>GitHub</Button>
@@ -44,9 +44,9 @@ class Projects extends Component {
 					</Card>
 					{/* Project 3 */}
 					<Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-						<CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
+						<CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project 3</CardTitle>
 						<CardText>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+							blablabla
 						</CardText>
 						<CardActions border>
 							<Button colored>GitHub</Button>
@@ -62,28 +62,27 @@ class Projects extends Component {
 		} else if(this.state.activeTab === 1) {
 			return (
 			<div>
-				<h1>This is PHP</h1>
+				<h1>PHP</h1>
 			</div>
 			)
 		} else if(this.state.activeTab === 2) {
 			return (
 			<div>
-				<h1>This is VueJS</h1>
+				<h1>VueJS</h1>
 			</div>
 			)
 		} else if(this.state.activeTab === 3) {
 			return (
 			<div>
-				<h1>This is MongoDB</h1>
+				<h1>MongoDB</h1>
 			</div>
 			)
 		}
-
  	}
 
 	render() {
 		return(
-			<div>
+			<div className="min-height-container">
 				<Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
 					<Tab>React</Tab>
 					<Tab>PHP</Tab>
