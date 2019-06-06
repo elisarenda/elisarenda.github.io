@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+@font-face {
+  font-family: 'Sofia-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Sofia-Regular.ttf'); /* IE9 Compat Modes */
+  src: local('Ovo Regular'), local('OvoRegular'),
+       url('/assets/fonts/Sofia-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/Sofia-Regular.ttf') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/Sofia-Regular.ttf') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/Sofia-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Sofia-Regular.ttf') format('svg'); /* Legacy iOS */
+}
