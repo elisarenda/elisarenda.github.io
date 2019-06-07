@@ -15,3 +15,42 @@ body {
        url('/assets/fonts/Sofia-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/assets/fonts/Sofia-Regular.ttf') format('svg'); /* Legacy iOS */
 }
+
+@font-face {
+  font-family: 'Raleway-ExtraLight';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Raleway-ExtraLight.ttf'); /* IE9 Compat Modes */
+  src: local('Ovo ExtraLight'), local('OvoExtraLight'),
+       url('/assets/fonts/Raleway-ExtraLight.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/Raleway-ExtraLight.ttf') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/Raleway-ExtraLight.ttf') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/Raleway-ExtraLight.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Raleway-ExtraLight.ttf') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Merriweather-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Merriweather-Light.ttf'); /* IE9 Compat Modes */
+  src: local('Ovo Light'), local('OvoLight'),
+       url('/assets/fonts/Merriweather-Light.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/Merriweather-Light.ttf') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/Merriweather-Light.ttf') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/Merriweather-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Merriweather-Light.ttf') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Montserrat-Regular.ttf'); /* IE9 Compat Modes */
+  src: local('Ovo Light'), local('OvoLight'),
+       url('/assets/fonts/Montserrat-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/Montserrat-Regular.ttf') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/Montserrat-Regular.ttf') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/Montserrat-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Montserrat-Regular.ttf') format('svg'); /* Legacy iOS */
+}

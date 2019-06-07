@@ -44,7 +44,7 @@ class App extends Component {
 					</Navigation>
 				</Header>
 				<Drawer style={{color:'white'}} 
-						title={ <Link style={{textDecoration: 'none', color: '#a28390', fontFamily: 'Sofia-Regular'}} to="/">
+						title={ <Link style={{textDecoration: 'none', color: '#906b7d', fontFamily: 'Sofia-Regular'}} to="/">
 									<img className="elisa-img" src='../assets/img/elisa.JPG' alt="logo"/> 
 									Elisa
 								</Link>}>
