@@ -9,7 +9,7 @@ class Landing extends Component {
     	<div className="type-writer" style={{width: '100%', margin: 'auto'}}>
 			<p>Hi, my name is <strong className="middle-red">Elisa,</strong></p>
 			<p><TypingEffect data={["junior web developer", "front end developer", "back end developer"]}/></p>
-			<p>living in <strong className="middle-red">Belgium.</strong></p>
+			<p>living in <strong className="middle-red">Belgium.</strong></p> 
       	</div>
     )
   }

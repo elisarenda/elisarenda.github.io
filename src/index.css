@@ -54,3 +54,29 @@ body {
        url('/assets/fonts/Montserrat-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/assets/fonts/Montserrat-Regular.ttf') format('svg'); /* Legacy iOS */
 }
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Montserrat-Light.ttf'); /* IE9 Compat Modes */
+  src: local('Ovo Light'), local('OvoLight'),
+       url('/assets/fonts/Montserrat-Light.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/Montserrat-Light.ttf') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/Montserrat-Light.ttf') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/Montserrat-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Montserrat-Light.ttf') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Raleway-Regular.ttf'); /* IE9 Compat Modes */
+  src: local('Ovo Light'), local('OvoLight'),
+       url('/assets/fonts/Raleway-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/Raleway-Regular.ttf') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/Raleway-Regular.ttf') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/Raleway-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Raleway-Regular.ttf') format('svg'); /* Legacy iOS */
+}

@@ -23,7 +23,7 @@ class App extends Component {
 
   render() {
     return (
-		<div className="demo-big-content" id="landing-grid">
+		<div className="App" id="landing-grid">
 			<Layout>
 				<Header 
 					className="header-color" 

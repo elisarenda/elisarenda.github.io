@@ -1,51 +1,46 @@
 import React, { Component } from 'react';
 import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
-
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import Form from './form'
+import SocialMedia from './socialMedia'
 class Contact extends Component {
+
+	state =  {
+		fields: {},
+	};
+
+	onChange = updatedValue => {
+		console.log('App comp got: ', updatedValue)
+		this.setState({ 
+			fields: {
+				...this.state.fields,
+				...updatedValue
+			}
+		});
+	};
+
 	render() {
     return(
     	<div className="contact-body">
 			<Grid className="contact-grid">
-				<Cell col={6}>
+				<Cell col={5}>
 					<h3>Elisa Renda</h3>
 					<img
 						src="../assets/img/java.jpg"
 						alt="avatar"
 						style={{height: '160px', borderRadius:'80px', opacity: '0.9'}}
 					/>
-					<p style={{ width: '75%', margin: 'auto', paddingTop: '2em'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+					<SocialMedia/>
 				</Cell>
-				<Cell col={6}>
+				<Cell col={7}>
 					<h3>Contact me</h3>
-					<hr/>
-					<div className="contact-list">
-						<List>
-							<ListItem>
-								<ListItemContent style={{fontSize: '22px', fontFamily: 'Montserrat-Regular'}}>
-									<i className="fa fa-phone-square" aria-hidden="true"/>
-									+32 493 76 17 77
-								</ListItemContent>
-							</ListItem>
-							<ListItem>
-								<ListItemContent style={{fontSize: '22px', fontFamily: 'Montserrat-Regular'}}>
-									<i className="fa fa-envelope" aria-hidden="true"/>
-									elisa.renda@hotmail.fr
-								</ListItemContent>
-							</ListItem>
-							<ListItem>
-								<ListItemContent style={{fontSize: '22px', fontFamily: 'Montserrat-Regular'}}>
-									<i className="fa fa-linkedin" aria-hidden="true"/>
-									elisa-renda
-								</ListItemContent>
-							</ListItem>
-							<ListItem>
-								<ListItemContent style={{fontSize: '22px', fontFamily: 'Montserrat-Regular'}}>
-									<i className="fa fa-github" aria-hidden="true"/>
-									elisarenda
-								</ListItemContent>
-							</ListItem>
-						</List>
-					</div>
+					<hr style={{width:'88%', margin:'auto'}}/>
+						<div className="contact-list">
+							<Form onChange={fields=> this.onChange(fields)}/>
+							<p style={{fontSize:'10px'}}>
+								{JSON.stringify(this.state.fields, null, 2)}
+							</p>
+						</div>
 				</Cell>
         	</Grid>
     	</div>

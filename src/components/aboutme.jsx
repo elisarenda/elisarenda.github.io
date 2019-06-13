@@ -3,7 +3,8 @@ class About extends Component {
 	render() {
 		return(
 			<div className="min-height-container">
-				<h1>About Page</h1>
+				<div className="vcard-container">
+				test</div>
 			</div>
 		)
  	}
