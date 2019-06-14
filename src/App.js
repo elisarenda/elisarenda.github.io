@@ -11,7 +11,7 @@ class App extends Component {
 		  el: "#landing-grid",
 		  color: 0xdeafbf,
 		  backgroundColor: 0x1e1925,
-		  points: 11.00,
+		  points: 9.00,
 		  maxDistance: 18.00,
 		  spacing: 17.00,
 		  showDots: false
