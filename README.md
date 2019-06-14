@@ -1,4 +1,4 @@
-# react-portfolio-starter
+# react-portfolio
 A React based portfolio app using create-react-app and React Router v4.
 
 # Tools
