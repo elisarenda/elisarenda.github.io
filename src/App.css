@@ -447,14 +447,13 @@ ul.icon-list li a {
 	text-align: center;
 	cursor: pointer;
 	border-radius: 50%;
-	border: 2px solid #fff;
+	border: 1px solid #fff;
 	float: left;
 	transition: all 0.5s ease;
 }
 
 .wrapper ul li .fa{
-	color: #fff;
-	/* margin-top: 20px; */
+	color: #a88399;
 	transition: all 0.5s ease;
 }
 
@@ -472,8 +471,8 @@ ul.icon-list li a {
 }
 /* instagram */
 .wrapper ul li:hover:nth-child(3){
-	border: 5px solid black;
-	box-shadow: 0 0 15px #bc2a8d;
+	border: 5px solid #4c4848;
+	box-shadow: 0 0 15px #4c4848;
 	transition: all 0.5s ease;
 }
 
