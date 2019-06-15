@@ -9,12 +9,12 @@ class App extends Component {
 	componentDidMount() {
 		this.effect = window.VANTA.NET({
 		  el: "#landing-grid",
-		  color: 0xdeafbf,
-		  backgroundColor: 0x1e1925,
-		  points: 9.00,
-		  maxDistance: 18.00,
-		  spacing: 17.00,
-		  showDots: false
+			color: 0xc88e82,
+			backgroundColor: 0x2a292f,
+			points: 5.00,
+			maxDistance: 21.00,
+			spacing: 14.00,
+			showDots: false
 		})
 	  }
 	componentWillUnmount() {
@@ -37,7 +37,6 @@ class App extends Component {
 					scroll
 				>
 					<Navigation className="navigation-bar">
-						<Link className="linkNavBar" to="/resume">Resume</Link>
 						<Link className="linkNavBar" to="/about">About Me</Link>
 						<Link className="linkNavBar" to="/projects">Projects</Link>
 						<Link className="linkNavBar" to="/contact">Contact</Link>
@@ -49,7 +48,6 @@ class App extends Component {
 									Elisa
 								</Link>}>
 					<Navigation className="link-drawer">
-						<Link to="/resume">Resume</Link>
 						<Link to="/about">About Me</Link>
 						<Link to="/projects">Projects</Link>
 						<Link to="/contact">Contact</Link>

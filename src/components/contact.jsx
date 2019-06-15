@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { Grid, Cell } from 'react-mdl';
 import Form from './form'
-import SocialMedia from './socialMedia'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 class Contact extends Component {
 
 	state =  {
@@ -23,16 +24,25 @@ class Contact extends Component {
     return(
     	<div className="contact-body">
 			<Grid className="contact-grid">
-				<Cell col={5}>
-					<h3>Elisa Renda</h3>
+			<Cell col={1}/>
+				<Cell className="info-contact" col={4}>
+					<h3 style={{paddingBottom:'45px', fontFamily:'Sofia'}}>Elisa Renda</h3>
 					<img
 						src="../assets/img/java.jpg"
 						alt="avatar"
-						style={{height: '160px', borderRadius:'80px', opacity: '0.9'}}
+						style={{height: '160px', borderRadius:'80px'}}
 					/>
-					<SocialMedia/>
+					<div className="mdl-list">
+						<div className="mdl-list__item">
+							<ul>
+								<li><FontAwesomeIcon className="fa fa-envelope" icon={faEnvelope} /></li>
+								<li><FontAwesomeIcon className="fa fa-linkedin" icon={faLinkedin} /></li>
+								<li><FontAwesomeIcon className="fa fa-github" icon={faGithub} /></li>
+							</ul>
+						</div>
+					</div>
 				</Cell>
-				<Cell col={7}>
+				<Cell className="form-contact" col={6}>
 					<h3>Contact me</h3>
 					<hr style={{width:'88%', margin:'auto'}}/>
 						<div className="contact-list">
@@ -42,6 +52,7 @@ class Contact extends Component {
 							</p>
 						</div>
 				</Cell>
+				<Cell col={1}/>
         	</Grid>
     	</div>
     )

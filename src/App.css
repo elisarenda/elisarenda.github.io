@@ -28,7 +28,6 @@
 .mdl-grid{
   background: white;
   border-radius: 3px;
-  padding: 15px!important
 }
 
 #landing-grid {
@@ -46,22 +45,7 @@
   transition: color 0.1s, background-color 0.1s;
 }
 
-.material-icons {
-  color:white;
-}
-
-.type-writer p {
-  margin-bottom: 0!important;
-  font-size: 1.7rem!important;
-  padding: 5px!important;
-  font-family: Raleway-ExtraLight;
-}
-
-.middle-red {
-  color: #c87070
-}
-
-.type-writer {
+.landing-page {
   height: 14em;
   position: absolute;
   top: 45%;
@@ -69,6 +53,14 @@
   text-align: center;
   color:white;
 }
+
+.landing-page p {
+  margin-bottom: 0!important;
+  font-size: 1.6rem!important;
+  padding: 5px!important;
+  font-family: Raleway-ExtraLight;
+}
+
 
 .linkNavBar::before {
   content: '';
@@ -78,7 +70,7 @@
   right: 0%;
   height: 3px;
   width: 100%;
-  background-color: #c87070;
+  background-color: #bf8980;
   -webkit-transform-origin: center top;
           transform-origin: center top;
   -webkit-transform: scale(0, 1);
@@ -89,7 +81,7 @@
 }
 
 .linkNavBar:active::before {
-  background-color: #c87070;
+  background-color: #bf8980;
 }
 
 .linkNavBar:hover::before,
@@ -170,15 +162,16 @@ font-size: 30px;
 .contact-grid {
   text-align: center;
   justify-content: center;
-  width: 80%;
+  width: 85%;
   /* height: 550px; */
   color: black;
   margin-bottom: 20px;
+  background:none
 }
 
 .contact-grid h3 {
   font-family: Raleway-ExtraLight;
-  color:#bd8fa6;
+  color:#a6736c;
 }
 
 .contact-grid p {
@@ -191,13 +184,20 @@ font-size: 30px;
   padding-right: 5rem;
 }
 
-.mdl-list {
-  display:inline-flex!important
-}
-.mdl-list__item {
-  padding: 15px!important;
+.mdl-list ul {
+  display: flex!important;
+  padding: 18px 0!important;
 }
 
+.mdl-list__item {
+  color:rgb(34, 32, 39)!important;
+  justify-content: center;
+}
+.mdl-list__item li {
+  list-style: none;
+  padding: 13px;
+  font-size: 1.7em
+}
 .avatar-img {
   height: 250px;
   padding-top: 5em;
@@ -258,8 +258,8 @@ font-size: 30px;
   margin: 0 auto;
 }
 .header-bg {
-  height: 140px;
-  background:#6c5161;
+  height: 120px;
+  background:#a0766f54;
   background-size: cover;
   background-position: center;
   border-radius: 4px;
@@ -275,18 +275,20 @@ font-size: 30px;
   font-size: 30px;
   margin-top: 0;
 }
-.info-container p.info {
+
+.info-container p.info-resume {
   font-size: 14px;
   padding-right: 20px;
   padding-left: 20px;
   color: #bdbdbd;
+  margin:0
 }
 .info-container p.name,
-.info-container p.info {
+.info-container p.info-resume {
   text-align: center;
   text-transform: uppercase;
   font-family: raleway-regular;
-  padding-top:7px;
+  padding-top:10px;
 }
 
 ul.icon-list {
@@ -299,7 +301,7 @@ ul.icon-list li {
   display: inline-block;
   font-size:26px;
   padding-right:35px;
-  color: #dba5a5;
+  color: rgba(99, 71, 73, 0.88);
 }
 ul.icon-list li a {
   display: block;
@@ -323,7 +325,6 @@ ul.icon-list li a {
   justify-content: center;
   text-align: left;
   flex-wrap: wrap;
-  padding:12px
 }
 .qrcode{
   animation: bounce 1.55s ease infinite alternate;
@@ -351,15 +352,6 @@ ul.icon-list li a {
       color: #666;
       margin: 0px 10px;
   }
-.resume-separator {
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(0.5, rgb(219, 165, 165))); 
-  width: 90%;
-  margin:auto;
-  min-height: 0.2rem;
-  border: 0;
-  border-radius: 2rem;
-}
-
 
 #feedback-form {
   margin: 0 auto;
@@ -407,7 +399,7 @@ ul.icon-list li a {
 #feedback-form button[type=submit] {
   display: block;
   margin: 20px auto 0;
-  width: 150px;
+  width: 140px;
   height: 40px;
   border-radius: 25px;
   border: none;
@@ -416,9 +408,9 @@ ul.icon-list li a {
   font-family: raleway-regular;
   font-size:12px;
   box-shadow: 1px 4px 10px 1px #fffefe;
-  background: -moz-linear-gradient(to right, #d4c7d4 0%,#9c7689 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(to right, #d4c7d4 0%,#9c7689 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #d4c7d4 0%,#9c7689 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(to right, #6c5c5a 0%,#e0958b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(to right, #6c5c5a 0%,#e0958b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #6c5c5a 0%,#e0958b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .contact-name{
@@ -453,7 +445,7 @@ ul.icon-list li a {
 }
 
 .wrapper ul li .fa{
-	color: #a88399;
+	color: rgb(191, 137, 128);
 	transition: all 0.5s ease;
 }
 
@@ -484,3 +476,11 @@ ul.icon-list li a {
 
 }
 
+.form-contact{
+  background:white
+}
+
+.info-contact{
+  background: #a0766f54;
+  border-radius:20px;
+}
