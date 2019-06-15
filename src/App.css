@@ -432,13 +432,56 @@ ul.icon-list li a {
   width: 100%
 }
 
-.icon-landing {
+.wrapper ul {
   display: flex;
   justify-content:center; 
   list-style: none;
   padding-inline-start: 0;
-  margin: 0
 }
-.icon-landing li {
-  padding: 20px;
+
+.wrapper ul li{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 10px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	float: left;
+	transition: all 0.5s ease;
 }
+
+.wrapper ul li .fa{
+	color: #fff;
+	/* margin-top: 20px; */
+	transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover:nth-child(1){
+	border: 5px solid  #dd4b39;
+	box-shadow: 0 0 15px  #dd4b39;
+	transition: all 0.5s ease;
+}
+
+/*twitter*/
+.wrapper ul li:hover:nth-child(2){
+	border: 5px solid  #00aced;
+	box-shadow: 0 0 15px  #00aced;
+	transition: all 0.5s ease;
+}
+/* instagram */
+.wrapper ul li:hover:nth-child(3){
+	border: 5px solid black;
+	box-shadow: 0 0 15px #bc2a8d;
+	transition: all 0.5s ease;
+}
+
+/* google */
+.wrapper ul li:hover:nth-child(4){
+  border: 5px solid  #3b5998;
+	box-shadow: 0 0 15px  #3b5998;
+	transition: all 0.5s ease;
+
+}
+

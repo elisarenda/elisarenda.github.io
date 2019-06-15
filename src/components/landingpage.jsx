@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import TypingEffect from "typing-effect-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faEnvelope, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 class Landing extends Component {
 
@@ -13,12 +14,12 @@ class Landing extends Component {
 				<p>living in <strong className="middle-red">Belgium.</strong></p>  */}
 				<h1 style={{color: 'rgb(135, 104, 123)', fontSize:'83px', fontFamily:'PlayfairDisplay-Regular', marginBottom:'0'}}>Elisa Renda</h1>
 				<p>Full Stack Junior Web Developer</p>
-				<div class="wrapper">
-					<ul className="icon-landing">
-						<li><FontAwesomeIcon icon={faFacebook}/></li>
-						<li><FontAwesomeIcon icon={faEnvelope} /></li>
-						<li><FontAwesomeIcon icon={faLinkedin} /></li>
-						<li><FontAwesomeIcon icon={faGithub} /></li>
+				<div className="wrapper">
+					<ul>
+						<li><FontAwesomeIcon className="fa fa-envelope" icon={faEnvelope} /></li>
+						<li><FontAwesomeIcon className="fa fa-linkedin" icon={faLinkedin} /></li>
+						<li><FontAwesomeIcon className="fa fa-github" icon={faGithub} /></li>
+						<li><FontAwesomeIcon className="fa fa-facebook" icon={faFacebook}/></li>
 					</ul>
 				</div>
     	</div>
