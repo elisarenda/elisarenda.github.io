@@ -52,7 +52,7 @@
 
 .type-writer p {
   margin-bottom: 0!important;
-  font-size: 2rem!important;
+  font-size: 1.7rem!important;
   padding: 5px!important;
   font-family: Raleway-ExtraLight;
 }
@@ -430,4 +430,15 @@ ul.icon-list li a {
 }
 .contact-firstname{
   width: 100%
+}
+
+.icon-landing {
+  display: flex;
+  justify-content:center; 
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0
+}
+.icon-landing li {
+  padding: 20px;
 }

@@ -80,3 +80,16 @@ body {
        url('/assets/fonts/Raleway-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/assets/fonts/Raleway-Regular.ttf') format('svg'); /* Legacy iOS */
 }
+
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/PlayfairDisplay-Regular.ttf'); /* IE9 Compat Modes */
+  src: local('Ovo Light'), local('OvoLight'),
+       url('/assets/fonts/PlayfairDisplay-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/PlayfairDisplay-Regular.ttf') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/PlayfairDisplay-Regular.ttf') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/PlayfairDisplay-Regular.ttf') format('svg'); /* Legacy iOS */
+}
