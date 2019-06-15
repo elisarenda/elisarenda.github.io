@@ -190,13 +190,21 @@ font-size: 30px;
 }
 
 .mdl-list__item {
-  color:rgb(34, 32, 39)!important;
   justify-content: center;
 }
+
 .mdl-list__item li {
   list-style: none;
   padding: 13px;
   font-size: 1.7em
+}
+
+.mdl-list__item li:hover {
+  opacity: .7;
+ }
+
+.mdl-list__item li a {
+  color:rgb(34, 32, 39)!important;
 }
 .avatar-img {
   height: 250px;
@@ -268,7 +276,7 @@ font-size: 30px;
   position: relative;
 }
 .info-container {
-  padding: 55px 40px 15px 40px;
+  padding: 55px 40px 0px 40px;
   background: white;
 }
 .info-container p.name {
@@ -291,22 +299,6 @@ font-size: 30px;
   padding-top:10px;
 }
 
-ul.icon-list {
-  list-style-type: none;
-  text-align: center;
-  margin-bottom: 0;
-  padding-bottom:10px;
-}
-ul.icon-list li {
-  display: inline-block;
-  font-size:26px;
-  padding-right:35px;
-  color: rgba(99, 71, 73, 0.88);
-}
-ul.icon-list li a {
-  display: block;
-  text-decoration: none;
-}
 .card-picture {
   border-radius: 50%;
   border: 1px solid #e0e0e0;

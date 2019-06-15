@@ -84,49 +84,6 @@ class Form extends Component {
               </form>
             </div>
           </div>
-        //  <MuiThemeProvider>
-        //  <div>
-        //      <form>
-        //          <TextField 
-        //              name="firstName"
-        //              hintText="First name"
-        //              floatingLabelText="First name"
-        //              value={this.state.firstName} 
-        //              onChange={e => this.change(e)}
-        //              floatingLabelFixed={true}
-        //          />
-        //          <TextField 
-        //              name="lastName"
-        //              hintText="Last name"
-        //              floatingLabelText="Last name"
-        //              value={this.state.lastName} 
-        //              onChange={e => this.change(e)}
-        //              floatingLabelFixed={true}
-        //          />
-        //          <TextField 
-        //              name="email"
-        //              hintText="Email"
-        //              floatingLabelText="email"
-        //              value={this.state.email} 
-        //              onChange={e => this.change(e)}
-        //              floatingLabelFixed={true}
-        //              fullWidth={true}
-        //          />
-        //          <br />
-        //           <TextField 
-        //              name="message"
-        //              hintText="Message"
-        //              floatingLabelText="message"
-        //              value={this.state.message} 
-        //              onChange={e => this.change(e)}
-        //              floatingLabelFixed={true}  
-        //              fullWidth={true}
-        //          />
-        //          <br/>
-        //          <button onClick={(e) => this.onSubmit(e)}>Submit</button>
-        //      </form>
-        //  </div>
-        //  </MuiThemeProvider>
         )
     }
 }
