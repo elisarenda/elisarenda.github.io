@@ -170,7 +170,7 @@ font-size: 30px;
 }
 
 .contact-grid h3 {
-  font-family: Raleway-ExtraLight;
+  font-family: PlayFair-Display;
   color:#a6736c;
 }
 
@@ -186,11 +186,12 @@ font-size: 30px;
 
 .mdl-list ul {
   display: flex!important;
-  padding: 18px 0!important;
+  padding: 82px 0 0 0px!important;
 }
 
 .mdl-list__item {
   justify-content: center;
+  padding:0
 }
 
 .mdl-list__item li {
@@ -469,10 +470,12 @@ font-size: 30px;
 }
 
 .form-contact{
-  background:white
+  background:white;
+  padding:5px
 }
 
 .info-contact{
   background: #a0766f54;
   border-radius:20px;
+  padding:5px
 }

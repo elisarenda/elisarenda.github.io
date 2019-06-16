@@ -24,41 +24,42 @@ class Contact extends Component {
     return(
     	<div className="contact-body">
 			<Grid className="contact-grid">
-			<Cell col={1}/>
-				<Cell className="info-contact" col={4}>
-					<h3 style={{paddingBottom:'45px', fontFamily:'Sofia'}}>Elisa Renda</h3>
-					<img
-						src="../assets/img/java.jpg"
-						alt="avatar"
-						style={{height: '160px', borderRadius:'80px'}}
-					/>
-					<div className="mdl-list">
-						<div className="mdl-list__item">
-							<ul>
-								<li>
-									<a href="mailto:elisa.renda@hotmail.fr"><FontAwesomeIcon className="fa fa-envelope" icon={faEnvelope} /></a>
-								</li>
-								<li>
-									<a href="https://www.linkedin.com/in/elisa-renda/"><FontAwesomeIcon className="fa fa-linkedin" icon={faLinkedin} /></a>
-								</li>
-								<li>
-									<a href="https://github.com/elisarenda"><FontAwesomeIcon className="fa fa-github" icon={faGithub} /></a>
-								</li>
-							</ul>
+				<Cell col={2}/>
+					<Cell className="info-contact" col={3}>
+						<h3 style={{paddingBottom:'65px', fontFamily:'Sofia'}}>Elisa Renda</h3>
+						<img
+							src="../assets/img/java.jpg"
+							alt="avatar"
+							style={{height: '168px', borderRadius:'80px'}}
+						/>
+						<div className="mdl-list">
+							<div className="mdl-list__item">
+								<ul>
+									<li>
+										<a href="mailto:elisa.renda@hotmail.fr"><FontAwesomeIcon className="fa fa-envelope" icon={faEnvelope} /></a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/elisa-renda/"><FontAwesomeIcon className="fa fa-linkedin" icon={faLinkedin} /></a>
+									</li>
+									<li>
+										<a href="https://github.com/elisarenda"><FontAwesomeIcon className="fa fa-github" icon={faGithub} /></a>
+									</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-				</Cell>
-				<Cell className="form-contact" col={6}>
-					<h3>Contact me</h3>
-					<hr style={{width:'88%', margin:'auto'}}/>
-						<div className="contact-list">
-							<Form onChange={fields=> this.onChange(fields)}/>
-							<p style={{fontSize:'10px'}}>
-								{JSON.stringify(this.state.fields, null, 2)}
-							</p>
-						</div>
-				</Cell>
-				<Cell col={1}/>
+					</Cell>
+					<Cell className="form-contact" col={5}>
+						<h3 style={{textAlign: 'left', paddingLeft: '35px', fontWeight: '900'}}>Contact me</h3>
+						<p style={{textAlign: 'left', paddingLeft: '35px', paddingRight: '35px'}}>If you have any questions, please don’t hesitate to contact using form below…</p>
+						<hr style={{width:'88%', margin:'auto'}}/>
+							<div className="contact-list">
+								<Form onChange={fields=> this.onChange(fields)}/>
+								<p style={{fontSize:'10px'}}>
+									{JSON.stringify(this.state.fields, null, 2)}
+								</p>
+							</div>
+					</Cell>
+					<Cell col={2}/>
         	</Grid>
     	</div>
     )

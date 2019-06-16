@@ -25,7 +25,7 @@ class About extends Component {
 								<img style={{height:'180px'}} className="qrcode" src="../assets/img/QR_CV.png" alt="qr-code" />
 							</div>
 							<div className="mdl-list" style={{padding:'0'}}>
-								<div className="mdl-list__item" style={{padding:'0'}}>
+								<div className="mdl-list__item">
 									<ul>
 										<li>
 											<a href="mailto:elisa.renda@hotmail.fr"><FontAwesomeIcon className="fa fa-envelope" icon={faEnvelope} /></a>
