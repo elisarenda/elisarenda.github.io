@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import Form from './form'
+import Form from './Form/form'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'

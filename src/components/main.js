@@ -1,10 +1,11 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import LandingPage from './landingpage';
-import AboutMe from './aboutme';
-import Contact from './contact';
-import Projects from './projects';
+import LandingPage from './Home/landingpage';
+import AboutMe from './About/aboutme';
+import Contact from './Contact/contact';
+import Projects from './Projects/projects';
+import Skills from './Skills/Skills'
 
 
 const Main = () => (
@@ -13,6 +14,7 @@ const Main = () => (
     <Route path="/about" component={AboutMe} />
     <Route path="/contact" component={Contact} />
     <Route path="/projects" component={Projects} />
+    <Route path="/skills" component={Skills} />
   </Switch>
 )
 

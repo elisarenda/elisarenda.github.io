@@ -101,7 +101,7 @@
 }
 
 .mdl-layout__drawer{
-  background: rgba(80, 59, 55, 0.31)!important;
+  /* background: rgba(80, 59, 55, 0.31)!important; */
 }
 .mdl-layout__drawer > .mdl-layout__title, .mdl-layout__drawer > .mdl-layout-title {
   border-bottom: 1px solid #906b7d;
