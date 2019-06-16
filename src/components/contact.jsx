@@ -33,8 +33,8 @@ class Contact extends Component {
 							style={{height: '168px', borderRadius:'80px'}}
 						/>
 						<div className="mdl-list">
-							<div className="mdl-list__item">
-								<ul>
+							<div className="mdl-list__item" style={{padding:'82px 0 0 0px'}}>
+								<ul style={{padding:'0'}}>
 									<li>
 										<a href="mailto:elisa.renda@hotmail.fr"><FontAwesomeIcon className="fa fa-envelope" icon={faEnvelope} /></a>
 									</li>

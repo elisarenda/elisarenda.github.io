@@ -42,7 +42,7 @@ class App extends Component {
 						<Link className="linkNavBar" to="/contact">Contact</Link>
 					</Navigation>
 				</Header>
-				<Drawer style={{color:'white'}} 
+				<Drawer
 						title={ <Link style={{textDecoration: 'none', color: '#906b7d', fontFamily: 'Sofia-Regular'}} to="/">
 									<img className="elisa-img" src='../assets/img/elisa.JPG' alt="logo"/> 
 									Elisa

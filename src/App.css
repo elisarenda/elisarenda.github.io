@@ -100,6 +100,9 @@
   text-transform: uppercase;
 }
 
+.mdl-layout__drawer{
+  background: rgba(80, 59, 55, 0.31)!important;
+}
 .mdl-layout__drawer > .mdl-layout__title, .mdl-layout__drawer > .mdl-layout-title {
   border-bottom: 1px solid #906b7d;
   padding-left: 0!important
@@ -186,7 +189,6 @@ font-size: 30px;
 
 .mdl-list ul {
   display: flex!important;
-  padding: 82px 0 0 0px!important;
 }
 
 .mdl-list__item {

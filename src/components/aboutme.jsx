@@ -24,8 +24,8 @@ class About extends Component {
 								<p className="text-resume">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 								<img style={{height:'180px'}} className="qrcode" src="../assets/img/QR_CV.png" alt="qr-code" />
 							</div>
-							<div className="mdl-list" style={{padding:'0'}}>
-								<div className="mdl-list__item">
+							<div className="mdl-list">
+								<div style={{padding:'0'}} className="mdl-list__item">
 									<ul>
 										<li>
 											<a href="mailto:elisa.renda@hotmail.fr"><FontAwesomeIcon className="fa fa-envelope" icon={faEnvelope} /></a>
