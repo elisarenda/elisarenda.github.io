@@ -37,9 +37,9 @@ class TagCanvas extends Component {
 export default TagCanvas;
 
 const options = {
-    textColour: '#bf8980',
+    textColour: '#e2a298',
     outlineThickness: 0.5,
-    outlineColour: '#fe0853',
+    outlineColour: '#bf8980',
     maxSpeed: 0.06,
     freezeActive: true,
     shuffleTags: true,
@@ -55,13 +55,13 @@ const options = {
 };
 
 const items = [
-    'HTML 5',
-    'CSS 3',
+    'HTML5',
+    'CSS3',
     'JavaScript',
     'PHP',
     'JSON',
-    'XML',
-    'NodeJS',
+    'Vuetify',
+    'React-MDL',
     'Git',
     'React',
     'Bootstrap',
@@ -73,8 +73,6 @@ const items = [
     'npm',
     'ThreeJS',
     'MySQL',
-    'Git',
-    'Java',
     'Material UI',
 ];
 
