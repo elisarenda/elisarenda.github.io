@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
-import Wrapper from '../UI/Wrapper/Wrapper';
 import Header from '../UI/Header/Header';
 import classes from './About.module.scss';
 
@@ -68,7 +67,8 @@ export default about;
 // 							</Link>
 // 							<p className="info-resume">Junior Web Developer</p>
 // 							<div className="center-resume">
-// 								<p className="text-resume">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+// 								<p className="text-resume">
+//								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 // 								<img style={{height:'180px'}} className="qrcode" src="../assets/img/QR_CV.png" alt="qr-code" />
 // 							</div>
 // 							<div className="mdl-list">

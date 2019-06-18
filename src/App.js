@@ -40,6 +40,7 @@ class App extends Component {
 						<Link className="linkNavBar" to="/about">About Me</Link>
 						<Link className="linkNavBar" to="/projects">Projects</Link>
 						<Link className="linkNavBar" to="/skills">Skills</Link>
+						<Link className="linkNavBar" to="/Works">Work</Link>
 						<Link className="linkNavBar" to="/contact">Contact</Link>
 					</Navigation>
 				</Header>
