@@ -99,63 +99,63 @@
     //  },
      {
         thumb: '../../assets/img/work/laMoelle.png',
-        github: 'https://github.com/itsmetambui/feedor',
+        github: 'https://github.com/elisarenda/PiloteMedia-LaMoelle',
         name: 'La Moelle',
         categoryDisplay: 'HTML/CSS/ReactJS',
         category: [categories.mai]
      },
      {
         thumb: '../../assets/img/work/AllezCine.png',
-        github: 'https://github.com/itsmetambui/vutachat',
+        github: 'https://github.com/elisarenda/allezCine',
         name: 'AllezCiné',
         categoryDisplay: 'HTML/CSS/VueJS',
         category: [categories.avril]
      },
      {
         thumb: '../../assets/img/work/happydrink.png',
-        github: 'https://github.com/itsmetambui/feedor',
+        github: 'https://github.com/elisarenda/happydrink',
         name: 'Happy Drink',
         categoryDisplay: 'HTML/CSS/ReactJS',
         category: [categories.mai]
      },
      {
         thumb: '../../assets/img/work/nonni.png',
-        github: 'https://github.com/itsmetambui/trillio',
+        github: 'https://github.com/elisarenda/Restaurant',
         name: 'Nonni',
         categoryDisplay: 'HTML/CSS',
         category: [categories.fevrier]
      },
      {
         thumb: '../../assets/img/work/Wikipedia.png',
-        github: 'https://github.com/itsmetambui/spacexplorer',
+        github: 'https://github.com/elisarenda/Wikipedia-Viewer',
         name: 'Wikipedia Viewer',
         categoryDisplay: 'HTML/CSS',
         category: [categories.fevrier]
      },
      {
         thumb: '../../assets/img/work/timbernerslee.png',
-        github: 'https://github.com/itsmetambui/trillio',
+        github: 'https://github.com/elisarenda/starting-web-development',
         name: 'Tim Berners Lee',
         categoryDisplay: 'HTML/CSS',
         category: [categories.fevrier]
      },
      {
         thumb: '../../assets/img/work/404page.png',
-        github: 'https://github.com/itsmetambui/spacexplorer',
+        github: 'https://github.com/elisarenda/404-Page',
         name: '404 Error',
         categoryDisplay: 'HTML/CSS',
         category: [categories.fevrier]
      },
      {
         thumb: '../../assets/img/work/cookieclicker.png',
-        github: 'https://github.com/itsmetambui/react-demo-store',
+        github: 'https://github.com/elisarenda/Cookie-Clicker',
         name: 'Cookie Clicker',
         categoryDisplay: 'HTML/CSS/JavaScript',
         category: [categories.mars]
      },
      {
         thumb: '../../assets/img/work/CV.png',
-        github: 'https://github.com/itsmetambui/natours',
+        github: 'https://github.com/elisarenda/Final-CV',
         name: 'CV HTML',
         categoryDisplay: 'HTML/CSS',
         category: [categories.janvier]
