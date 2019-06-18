@@ -1,20 +1,8 @@
 .Works {
-    padding: 30px 0;
+    padding: 60px 0;
     width: 90%;
     margin: 0 auto;
     animation: pageLoad 1s;
-}
-
-.Memo {
-    margin: 50px 0;
-    font-size: 18px;
-    font-weight: 300;
-    color:white;
-
-    a {
-        color: #bf8980;
-        text-decoration: underline;
-    }
 }
 
 @keyframes pageLoad {

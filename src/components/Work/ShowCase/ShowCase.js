@@ -1,40 +1,39 @@
- import React, { Component } from 'react';
- import './ShowCase.scss';
- import mixitup from 'mixitup';
- import $ from 'jquery';
- import Header from '../../UI/Header/Header';
+import React, { Component } from 'react';
+import './ShowCase.scss';
+import mixitup from 'mixitup';
+import $ from 'jquery';
 
 
- class ShowCase extends Component {
-     componentDidMount() {
-         const firstTab = document.getElementsByClassName('filter')[0];
-         this.posFilterBar(firstTab);
-         var containerEl = document.querySelector('.showcase-container');
-         mixitup(containerEl);
-     }
+class ShowCase extends Component {
+    componentDidMount() {
+        const firstTab = document.getElementsByClassName('filter')[0];
+        this.posFilterBar(firstTab);
+        var containerEl = document.querySelector('.showcase-container');
+        mixitup(containerEl);
+    }
 
-     changeTab = e => {
-         this.posFilterBar(e.target);
-     };
+    changeTab = e => {
+        this.posFilterBar(e.target);
+    };
 
-     posFilterBar = element => {
-         var origin = $(element)
-             .parent()
-             .offset().left;
-         var pos = $(element).offset().left;
-         $('.float-bar').css({
-             left: pos - origin,
-             width: $(element).innerWidth()
-         });
-         $('.float-bar .row').css('left', (pos - origin) * -1);
-     };
+    posFilterBar = element => {
+        var origin = $(element)
+            .parent()
+            .offset().left;
+        var pos = $(element).offset().left;
+        $('.float-bar').css({
+            left: pos - origin,
+            width: $(element).innerWidth()
+        });
+        $('.float-bar .row').css('left', (pos - origin) * -1);
+    };
 
-     render() {
-         const cards = projects.map((prj, idx) => {
-             return (
-                 <div key={idx} className={['mix', ...prj.category].join(' ')}>
-                     <img src={prj.thumb} alt="project thumbnail" />
-                     <div className="links">
+    render() {
+        const cards = projects.map((prj, idx) => {
+            return (
+                <div key={idx} className={['mix', ...prj.category].join(' ')}>
+                    <img src={prj.thumb} alt="project thumbnail" />
+                    <div className="links">
                         {prj.inprogress ? 
                             <p>In progress</p> :
                             <>
@@ -42,62 +41,53 @@
                             </>
                         }
                     </div>
-                 </div>
-             );
-         });
-        //  const tabs = Object.keys(categories).map(key => {
-        //      return (
-        //          <div key={key} className="filter" data-filter={`.${categories[key]}`} onClick={this.changeTab}>
-        //              {categories[key].toUpperCase()}
-        //          </div>
-        //      );
-        //  });
-         return (
-             <div className="showcase">
-                 <div style={{margin:'0'}} className="filter-wrap">
-                     <div className="flex row">
-                         <div className="filter" data-filter="all" onClick={this.changeTab}>
-                             
-                         </div>
-                         {/* {tabs} */}
-                     </div>
-                     <div className="float-bar">
-                         {/* <div className="flex row">
-                             <div className="filter" data-filter="all">
-                                 ALL
-                             </div>
-                              {tabs} 
-                         </div> */}
-                     </div> 
-                 </div>
-                 <Header className="header" text="Projects" />
-                 <div className="showcase-container">{cards}</div>
-             </div>
-         );
-     }
- }
+                </div>
+            );
+        });
+        const tabs = Object.keys(categories).map(key => {
+            return (
+                <div key={key} className="filter" data-filter={`.${categories[key]}`} onClick={this.changeTab}>
+                    {categories[key]}
+                </div>
+            );
+        });
+        return (
+            <div className="showcase">
+                <div className="filter-wrap">
+                    <div className="flex row">
+                        <div className="filter" data-filter="all" onClick={this.changeTab}>
+                            ALL
+                        </div>
+                        {tabs}
+                    </div>
+                    <div className="float-bar">
+                        <div className="flex row">
+                            <div className="filter" data-filter="all">
+                                ALL
+                            </div>
+                            {tabs}
+                        </div>
+                    </div>
+                </div>
 
- export default ShowCase;
+                <div className="showcase-container">{cards}</div>
+            </div>
+        );
+    }
+}
 
- const categories = {
-     janvier: 'January',
-     fevrier: 'February',
-     mars: 'March',
-     avril: 'April',
-     mai: 'May',
- };
+export default ShowCase;
 
- const projects = [
-  
-   
-    //  {
-    //     thumb: '../../assets/img/work/todos.png',
-    //     github: 'https://github.com/itsmetambui/feedor',
-    //     name: 'To do list',
-    //     categoryDisplay: 'HTML/CSS/ReactJS',
-    //     category: [categories.mai]
-    //  },
-     {
+const categories = {
+    janvier: 'January',
+    fevrier: 'February',
+    mars: 'March',
+    avril: 'April',
+    mai: 'May',
+};
+
+const projects = [
+    {
         thumb: '../../assets/img/work/laMoelle.png',
         github: 'https://github.com/elisarenda/PiloteMedia-LaMoelle',
         name: 'La Moelle',
@@ -160,5 +150,4 @@
         categoryDisplay: 'HTML/CSS',
         category: [categories.janvier]
      },
-
- ];
+];

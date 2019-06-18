@@ -5,21 +5,18 @@
     flex-direction: column;
     justify-content: center;
 }
-.header{
-    margin:30px!important;
-    text-align:left;
-}
 .filter-wrap {
     display: inline-block;
     position: relative;
     margin: 0 auto 50px 0;
     z-index: 10;
-    color:white;
+    color: white;
 
     .flex {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family:montserrat-light
     }
 
     .row {
@@ -38,16 +35,16 @@
         position: absolute;
         top: 0;
         left: 0;
-        color: #bf8980;
+        background: #bf8980;
         overflow: hidden;
         height: 100%;
         margin: auto 0;
         z-index: 12;
-        // transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
         .row {
             position: absolute;
-            // transition: left 0.5s ease-in-out;
+            transition: left 0.5s ease-in-out;
         }
     }
 }
@@ -74,35 +71,35 @@
 .gap {
     display: inline-block;
     vertical-align: top;
+
 }
 
 .mix {
     height: 300px;
     position: relative;
     overflow: hidden;
-    margin: 2px;
 
     img {
         width: 100%;
-        height: 100%;
-        max-width: 340px;
-        transform: scale(1.15);
+        height: 90%;
+        transform: scale(1.00);
         transition: all 0.5s ease-in-out;
         opacity: 0.7;
         background-color: black;
+        border-radius:3%
     }
 
     .links {
         position: absolute;
         bottom: 40px;
-        width: 40%;
+        width: 25%;
         display: flex;
         justify-content: center;
 
-        padding: 20px 30px;
+        padding: 15px 26px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: black;
+        background-color: #bf8980;
         opacity: 0;
         transition: all 0.5s ease-in-out;
 
@@ -112,7 +109,8 @@
         a {
             margin: 0 10px;
             color: inherit;
-            font-weight: bold;
+            font-weight: lighter;
+            letter-spacing: 1px;
 
             &:hover {
                 text-decoration: underline;
@@ -123,8 +121,9 @@
     &:hover {
         img {
             opacity: 1;
-            height: 100%;
+            height: 96%;
             transform: scale(1.03);
+            border-radius:3%
         }
 
         .links {
@@ -156,7 +155,8 @@
 @media screen and (min-width: 769px) {
     .mix,
     .gap {
-        width: calc(100% / 3 - (((3 - 1) * 1rem) / 3));
+        width: 300px;
+        margin:4px
     }
 
     .filter-wrap {
@@ -164,8 +164,8 @@
 
         .filter {
             padding: 5px 50px;
-            margin: 0 20px;
-            font-size: 18px;
+            // margin: 0 25px;
+            font-size: 16px;
         }
     }
 }
