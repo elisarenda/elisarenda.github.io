@@ -10,7 +10,7 @@ const about = () => {
                     <Header text="About me" />
 					<p className={classes.Journey}>
                         Hi! My name is Elisa. I'm about to end my training within {' '}
-                        <a href="https://www.tma.vn/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.becode.org/" target="_blank" rel="noopener noreferrer">
                             BeCode
                         </a>{' '} as a full stack web developer in Brussels. 
                     </p>
@@ -43,7 +43,7 @@ const about = () => {
                 </div>
                 <div className={classes.ImageArea}>
 					<img className="card-picture" src="../assets/img/elisa.jpg" alt=""/>
-					<img style={{height:'110px', width: '110px', paddingTop: '45%'}} className="qrcode" src="../assets/img/QR_CV.png" alt="qr-code" />
+					<img className={classes.qrCodeMobile} id="qrcode" src="../assets/img/QR_CV.png" alt="qr-code" />
 					Check more!
                 </div>
             </div>

@@ -92,7 +92,7 @@ class Contact extends Component {
                         <form method="POST" action="elisa.renda@hotmail.fr">
                             <div>
                                 <div className={classes.InputWrapper}>
-                                    <input type="text" name="name" placeholder="Name" />
+                                    <input type="text" name="name" style={{color:'hsl(240, 4%, 76%)'}}placeholder="Name" />
                                     <span />
                                 </div>
                                 <div className={classes.InputWrapper}>

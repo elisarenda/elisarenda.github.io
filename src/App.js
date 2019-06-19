@@ -44,10 +44,10 @@ class App extends Component {
 					</Navigation>
 				</Header>
 				<Drawer
-						title={ <Link style={{textDecoration: 'none', color: '#906b7d', fontFamily: 'Sofia-Regular'}} to="/">
-									<img className="elisa-img" src='../assets/img/elisa.JPG' alt="logo"/> 
-									Elisa
-								</Link>}>
+					title={ <Link style={{textDecoration: 'none', color: '#906b7d', fontFamily: 'Sofia-Regular'}} to="/">
+								<img className="elisa-img" src='../assets/img/elisa.JPG' alt="logo"/> 
+								Elisa
+							</Link>}>
 					<Navigation className="link-drawer">
 						<Link to="/about">About</Link>
 						<Link to="/skills">Skills</Link>
@@ -56,7 +56,6 @@ class App extends Component {
 					</Navigation>
 				</Drawer>
 				<Content>
-					<div className="page-content" />
 					<Main/>
 				</Content>
 			</Layout>

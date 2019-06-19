@@ -34,8 +34,8 @@
                     input,
                     textarea {
                         width: 100%;
-                        color: #8d8d8d;
-                        background: #37393b;
+                        color: red;
+                        background: #585253d9;
                         box-sizing: border-box;
                         border: 0;
                         height: 50px;
@@ -50,6 +50,9 @@
                         transition: 0.4s;
                     }
 
+                    ::placeholder{
+                        color: rgb(191, 191, 196)
+                    }
                     input {
                         padding: 0 20px;
                     }
@@ -119,13 +122,13 @@
   display: block;
   line-height: 45px;
   position:relative;
-  background:#585253bd
+  background:#585253
 }
 
 .socialIcon ul li a i{
   font-size:30px;
   color: white;
-  background:#585253bd
+  background:#585253
 }
 .socialIcon ul li a:before{
   position:absolute;
@@ -138,7 +141,7 @@
   -webkit-transform:rotate(60deg);
       -ms-transform:rotate(60deg);
           transform:rotate(60deg);
-  background:#585253bd
+  background:#585253
 
 }
 .socialIcon ul li a:after{
@@ -152,7 +155,7 @@
       -ms-transform:rotate(-60deg);
           transform:rotate(-60deg);
   z-index:-1;
-  background:#585253bd
+  background:#585253
 
 }
 

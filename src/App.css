@@ -319,8 +319,10 @@ font-size: 30px;
   text-align: left;
   flex-wrap: wrap;
 }
-.qrcode{
+#qrcode{
   animation: bounce 1.55s ease infinite alternate;
+  padding-top: 75%
+
 }
 @keyframes bounce{
   from {transform: translateY(18px);}
@@ -478,4 +480,19 @@ font-size: 30px;
   background: #a0766f54;
   border-radius:20px;
   padding:5px
+}
+
+.material-icons {
+  font-size: 35px!important;
+  color: rgb(191, 191, 196)
+}
+@media screen and (min-width: 1025px) {
+  .mdl-layout__drawer-button {
+    line-height: 66px!important
+  }
+}
+@media screen and (min-width: 1025px) {
+.mdl-layout__drawer-button {
+    line-height: 63px!important
+}
 }

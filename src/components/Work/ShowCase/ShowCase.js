@@ -38,6 +38,7 @@ class ShowCase extends Component {
                             <p>In progress</p> :
                             <>
                                 <a href={prj.github} target="_blank" rel="noopener noreferrer">Github</a>
+                                {/* <a href={prj.live} target="_blank" rel="noopener noreferrer">Live</a> */}
                             </>
                         }
                     </div>
