@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../UI/Header/Header';
 import classes from './About.module.scss';
+import { Link } from 'react-router-dom';
 
 const about = () => {
     return (
@@ -8,33 +9,36 @@ const about = () => {
                 <div className={classes.TextArea}>
                     <Header text="About me" />
 					<p className={classes.Journey}>
-                        A highly driven and motivated developer with over three years’ experience in web development.
-                    </p>
-                    <p className={classes.Journey}>
-                        In 2016, I got my first job as a junior frontend developer at{' '}
+                        Hi! My name is Elisa. I'm about to end my training within {' '}
                         <a href="https://www.tma.vn/" target="_blank" rel="noopener noreferrer">
-                            TMA Solutions
-                        </a>{' '}
-                        in HCM, Vietnam. I had the chance working with highly experienced partners like Nokia, building
-                        large Single Page Applications for networking.
+                            BeCode
+                        </a>{' '} as a full stack web developer in Brussels. 
+                    </p>
+                    <p className={classes.Journey}>
+                        Enthusiastic, I am interested in computer science and more particularly in the construction of websites and applications. 
+                        Since the beginning of this training, I have gained experience in various fields:
+                    </p>
+
+                    <div className={classes.Journey}>
+                        <ul>
+                            <li><b>Technologies</b>: HTML5, CSS3, JavaScript, PHP</li>
+                            <li><b>Frameworks/Librairies</b>: ReactJS, React Native, Meteor, VueJS, ThreeJS</li>
+                            <li><b>Back-end/Services</b>: Firebase, MongoDB, mySQL</li>
+                        </ul>
+                    </div>
+
+                    <p className={classes.Journey}>
+                        As this sector completes my studies, I look forward to gaining more experience in IT.{' '}
+                        I have a preference for React, but I'm open to all technologies. 
                     </p>
 
                     <p className={classes.Journey}>
-                        While woking at TMA Solution, I was also exposed to backend development with dockerization and
-                        continous delivery.
+                        I'm currently study and round out my skills to become a fullstack developer, looking for growth opportunities from a remote team-based environment.
                     </p>
-
                     <p className={classes.Journey}>
-                        Two years later I moved to Can Tho and started to work for{' '}
-                        <a href="https://codeberryschool.com/" target="_blank" rel="noopener noreferrer">
-                            CodeBerry code school
-                        </a>
-                        . Here, we work as a multi-national, 100% remote team, applied Agile development through Scrum framework deliver features to teach people coding.
-                    </p>
-
-                    <p className={classes.Journey}>
-                        I'm currently resigned from work to study and round out my skills to become a fullstack
-                        developer, looking for growth opportunities from a remote team-based environment.
+                        Would like to know more?
+                        <br />
+                        Feel free to <Link to="/contact">e-mail</Link> me.
                     </p>
                 </div>
                 <div className={classes.ImageArea}>
