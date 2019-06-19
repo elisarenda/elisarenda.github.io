@@ -37,7 +37,7 @@ class App extends Component {
 					scroll
 				>
 					<Navigation className="navigation-bar">
-						<Link className="linkNavBar" to="/about">About Me</Link>
+						<Link className="linkNavBar" to="/about">About</Link>
 						<Link className="linkNavBar" to="/skills">Skills</Link>
 						<Link className="linkNavBar" to="/projects">Projects</Link>
 						<Link className="linkNavBar" to="/contact">Contact</Link>
@@ -49,7 +49,7 @@ class App extends Component {
 									Elisa
 								</Link>}>
 					<Navigation className="link-drawer">
-						<Link to="/about">About Me</Link>
+						<Link to="/about">About</Link>
 						<Link to="/skills">Skills</Link>
 						<Link to="/projects">Projects</Link>
 						<Link to="/contact">Contact</Link>

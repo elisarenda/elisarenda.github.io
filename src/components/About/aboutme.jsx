@@ -38,9 +38,9 @@ const about = () => {
                     </p>
                 </div>
                 <div className={classes.ImageArea}>
-					{/* <img className="card-picture" src="../assets/img/elisa.jpg" alt=""/> */}
-					<img style={{height:'250px',width: '250px'}} className="qrcode" src="../assets/img/QR_CV.png" alt="qr-code" />
-					Check more about me!
+					<img className="card-picture" src="../assets/img/elisa.jpg" alt=""/>
+					<img style={{height:'110px', width: '110px', paddingTop: '45%'}} className="qrcode" src="../assets/img/QR_CV.png" alt="qr-code" />
+					Check more!
                 </div>
             </div>
     );
