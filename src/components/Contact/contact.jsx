@@ -77,8 +77,10 @@ class Contact extends Component {
         return (
                 <div className={classes.Contact}>
                     <div className={classes.Form}>
+                    <div style={{paddingLeft:'8%'}}>
+                    <Header text="Contact me" />
+                    </div>
                         <div className={classes.socialIcon}>
-                            <Header text="Contact me" />
                             <ul>
                                 <li><a href="https://www.facebook.com/renda.elisa"><i className="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i className="fab fa-twitter"></i></a></li>
@@ -86,7 +88,7 @@ class Contact extends Component {
                                 <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                             </ul>
                         </div>
-                        <p style={{color:'white'}}>If you have any question, please don't hesitate to contact using the form below...</p>
+                        <p style={{color:'white', paddingTop: '25px'}}>If you have any question, please don't hesitate to contact using the form below...</p>
                         <form method="POST" action="elisa.renda@hotmail.fr">
                             <div>
                                 <div className={classes.InputWrapper}>

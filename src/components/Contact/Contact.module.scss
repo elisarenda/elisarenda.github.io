@@ -11,7 +11,7 @@
         form {
               width: 65%;
               margin: auto;
-              
+
             div {
                 display: flex;
 
@@ -82,43 +82,25 @@
         }
     }
 
-    // .Map {
-    //     flex: 2;
-    //     position: relative;
-
-    //     .Info {
-    //         z-index: 2;
-    //         position: absolute;
-    //         top: 50px;
-    //         left: 50px;
-    //         background: #000;
-    //         font-size: 13px;
-    //         padding: 20px;
-
-    //         p {
-    //             margin: 5px 0;
-    //             color: white;
-    //             span {
-    //                 color: #bf8980;
-    //             }
-    //         }
-    //     }
-    // }
-    
+.socialIcon {
+  // padding: 5px 70px 50px 70px;
+  // display: flex;
+  align-items: flex-end;
+  margin: auto;
+  width: fit-content;
+}
 
 .socialIcon ul{
-  list-style:none;
-  margin: 0;
-  padding: 0;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  position:absolute;
-  top:17%;
-  left: 75%;
-  -webkit-transform:translate(-50%,-50%);
-      -ms-transform:translate(-50%,-50%);
-          transform:translate(-50%,-50%)
+  list-style: none;
+  /* padding: 0; */
+  display: flex;
+  position: relative;
+  /* top: 17%; */
+  /* left: 75%; */
+  /* transform: translate(-50%, -50%); */
+  // -webkit-transform:translate(-50%,-50%);
+  //     -ms-transform:translate(-50%,-50%);
+  //         transform:translate(-50%,-50%)
 }
 .socialIcon ul li{
   margin: 0 10px;
@@ -137,13 +119,13 @@
   display: block;
   line-height: 45px;
   position:relative;
-  background:#bf8980b3
+  background:#585253bd
 }
 
 .socialIcon ul li a i{
   font-size:30px;
   color: white;
-  background:#bf8980b3
+  background:#585253bd
 }
 .socialIcon ul li a:before{
   position:absolute;
@@ -156,7 +138,7 @@
   -webkit-transform:rotate(60deg);
       -ms-transform:rotate(60deg);
           transform:rotate(60deg);
-  background:#bf8980b3
+  background:#585253bd
 
 }
 .socialIcon ul li a:after{
@@ -170,7 +152,7 @@
       -ms-transform:rotate(-60deg);
           transform:rotate(-60deg);
   z-index:-1;
-  background:#bf8980b3
+  background:#585253bd
 
 }
 
