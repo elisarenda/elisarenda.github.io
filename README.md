@@ -3,7 +3,9 @@ A React based portfolio app using create-react-app and React Router v4.
 
 # Tools
 * create-react-app cli
-* React MDL material design
+* MaterialUI
+* Jquery
+* Mixitup
 * React Router v4
 
 # Start App
