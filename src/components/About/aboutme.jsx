@@ -1,8 +1,4 @@
-import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom';
+import React from 'react';
 import Header from '../UI/Header/Header';
 import classes from './About.module.scss';
 
@@ -43,7 +39,7 @@ const about = () => {
                 </div>
                 <div className={classes.ImageArea}>
 					{/* <img className="card-picture" src="../assets/img/elisa.jpg" alt=""/> */}
-					<img style={{height:'160px',width: '160px'}} className="qrcode" src="../assets/img/QR_CV.png" alt="qr-code" />
+					<img style={{height:'250px',width: '250px'}} className="qrcode" src="../assets/img/QR_CV.png" alt="qr-code" />
 					Check more about me!
                 </div>
             </div>

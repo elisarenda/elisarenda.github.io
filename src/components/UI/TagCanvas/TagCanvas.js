@@ -73,7 +73,7 @@ const items = [
     'npm',
     'ThreeJS',
     'MySQL',
-    'Material UI',
+    'Material-UI',
 ];
 
 const getSize = () => {
