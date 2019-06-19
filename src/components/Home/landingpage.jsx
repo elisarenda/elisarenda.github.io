@@ -12,10 +12,10 @@ class Landing extends Component {
 				<p>Full Stack Junior Web Developer</p>
 				<div className="wrapper">
 					<ul>
-						<li><FontAwesomeIcon className="fa fa-envelope" icon={faEnvelope} /></li>
-						<li><FontAwesomeIcon className="fa fa-linkedin" icon={faLinkedin} /></li>
-						<li><FontAwesomeIcon className="fa fa-github" icon={faGithub} /></li>
-						<li><FontAwesomeIcon className="fa fa-facebook" icon={faFacebook}/></li>
+						<li><a href="mailto:elisa.renda@hotmail.fr"><FontAwesomeIcon className="fa fa-envelope" icon={faEnvelope} /></a></li>
+						<li><a href="https://www.linkedin.com/in/elisa-renda/"><FontAwesomeIcon className="fa fa-linkedin" icon={faLinkedin} /></a></li>
+						<li><a href="https://github.com/elisarenda"><FontAwesomeIcon className="fa fa-github" icon={faGithub} /></a></li>
+						<li><a href="https://www.facebook.com/renda.elisa"><FontAwesomeIcon className="fa fa-facebook" icon={faFacebook}/></a></li>
 					</ul>
 				</div>
     	</div>
