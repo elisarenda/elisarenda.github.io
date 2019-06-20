@@ -34,7 +34,8 @@
     .Skills {
         flex-direction: row;
         padding: 0 5%;
-        width: 85%;
+        height: 100%;
+        box-sizing: border-box;
         margin: auto;
 
         .SkillChart {

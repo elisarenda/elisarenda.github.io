@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import '../../js/tag-canvas.min.js'
 
 class TagCanvas extends Component {
+    
     componentDidMount() {
         try {
             window.TagCanvas.Start('skillChartCanvas', 'tags', options)
