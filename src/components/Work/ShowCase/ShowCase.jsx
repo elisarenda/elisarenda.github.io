@@ -1,31 +1,31 @@
-import React, { Component } from 'react';
-import './ShowCase.scss';
-import mixitup from 'mixitup';
-import $ from 'jquery';
+import React, { Component } from 'react'
+import './ShowCase.scss'
+import mixitup from 'mixitup'
+import $ from 'jquery'
 
 
 class ShowCase extends Component {
     componentDidMount() {
-        const firstTab = document.getElementsByClassName('filter')[0];
-        this.posFilterBar(firstTab);
-        var containerEl = document.querySelector('.showcase-container');
-        mixitup(containerEl);
+        const firstTab = document.getElementsByClassName('filter')[0]
+        this.posFilterBar(firstTab)
+        var containerEl = document.querySelector('.showcase-container')
+        mixitup(containerEl)
     }
 
     changeTab = e => {
-        this.posFilterBar(e.target);
+        this.posFilterBar(e.target)
     };
 
     posFilterBar = element => {
         var origin = $(element)
             .parent()
-            .offset().left;
-        var pos = $(element).offset().left;
+            .offset().left
+        var pos = $(element).offset().left
         $('.float-bar').css({
             left: pos - origin,
             width: $(element).innerWidth()
-        });
-        $('.float-bar .row').css('left', (pos - origin) * -1);
+        })
+        $('.float-bar .row').css('left', (pos - origin) * -1)
     };
 
     render() {
@@ -43,15 +43,15 @@ class ShowCase extends Component {
                         }
                     </div>
                 </div>
-            );
-        });
+            )
+        })
         const tabs = Object.keys(categories).map(key => {
             return (
                 <div key={key} className="filter" data-filter={`.${categories[key]}`} onClick={this.changeTab}>
                     {categories[key]}
                 </div>
-            );
-        });
+            )
+        })
         return (
             <div className="showcase">
                 <div className="filter-wrap">
@@ -73,11 +73,11 @@ class ShowCase extends Component {
 
                 <div className="showcase-container">{cards}</div>
             </div>
-        );
+        )
     }
 }
 
-export default ShowCase;
+export default ShowCase
 
 const categories = {
     janvier: 'January',
@@ -85,7 +85,7 @@ const categories = {
     mars: 'March',
     avril: 'April',
     mai: 'May',
-};
+}
 
 const projects = [
     {
@@ -151,4 +151,4 @@ const projects = [
         categoryDisplay: 'HTML/CSS',
         category: [categories.janvier]
      },
-];
+]

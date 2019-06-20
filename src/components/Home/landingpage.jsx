@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 class Landing extends Component {
@@ -23,4 +23,4 @@ class Landing extends Component {
   }
 }
 
-export default Landing;
+export default Landing

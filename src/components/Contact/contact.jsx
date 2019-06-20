@@ -1,8 +1,7 @@
-
-import React, { Component } from 'react';
-import Header from '../UI/Header/Header';
+import React, { Component } from 'react'
+import Header from '../UI/Header/Header'
 import Form from './Form/Form'
-import classes from './Contact.module.scss';
+import classes from './Contact.module.scss'
 
 class Contact extends Component {
 
@@ -17,7 +16,7 @@ class Contact extends Component {
  				...this.state.fields,
  				...updatedValue
  			}
- 		});
+ 		})
  	};
 
     render() {
@@ -32,7 +31,7 @@ class Contact extends Component {
                                 <li><a href="https://www.facebook.com/renda.elisa"><i className="fab fa-facebook-f"></i></a></li>
                                 <li><a href="https://github.com/elisarenda"><i className="fab fa-github"></i></a></li>
                                 <li><a href="https://www.linkedin.com/in/elisa-renda/"><i className="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i className="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.instagram.com/rndelisa/"><i className="fab fa-instagram"></i></a></li>
                             </ul>
                         </div>
                         <p style={{color:'white', paddingTop: '8px'}}>If you have any question, please don't hesitate to contact using the form below...</p>
@@ -42,8 +41,8 @@ class Contact extends Component {
  						</p>
                     </div>
 			</div>
-        );
+        )
     }
 }
 
-export default Contact;
+export default Contact

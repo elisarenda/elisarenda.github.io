@@ -118,18 +118,9 @@
   color: white;
 }
 
-.card-picture {
-  border-radius: 50%;
-  border: 1px solid #e0e0e0;
-  height: 200px;
-  width: 140px;
-  margin: auto;
-  box-shadow:-0px 0px 18px 2px #8d8383
-}
-
 #qrcode{
   animation: bounce 1.55s ease infinite alternate;
-  padding-top: 75%
+  padding-top: 100%
 }
 
 @keyframes bounce{

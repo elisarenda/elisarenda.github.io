@@ -1,5 +1,5 @@
-import React from 'react';
-import classes from './Wrapper.module.scss';
+import React from 'react'
+import classes from './Wrapper.module.scss'
 
 const wrapper = props => {
     return (
@@ -12,7 +12,7 @@ const wrapper = props => {
                 &lt;/html&gt;
             </span>
         </div>
-    );
-};
+    )
+}
 
-export default wrapper;
+export default wrapper

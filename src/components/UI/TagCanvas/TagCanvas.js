@@ -1,13 +1,13 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
-import React, { Component } from 'react';
-import '../../js/tag-canvas.min.js';
+import React, { Component } from 'react'
+import '../../js/tag-canvas.min.js'
 
 class TagCanvas extends Component {
     componentDidMount() {
         try {
-            window.TagCanvas.Start('skillChartCanvas', 'tags', options);
+            window.TagCanvas.Start('skillChartCanvas', 'tags', options)
         } catch (e) {
-            document.getElementById('skillChartContainer').style.display = 'none';
+            document.getElementById('skillChartContainer').style.display = 'none'
         }
     }
 
@@ -17,8 +17,8 @@ class TagCanvas extends Component {
                 <li key={idx}>
                     <a>{item}</a>
                 </li>
-            );
-        });
+            )
+        })
         return (
             <React.Fragment>
                 <div id="skillChartContainer">
@@ -30,11 +30,11 @@ class TagCanvas extends Component {
                     <ul>{tags}</ul>
                 </div>
             </React.Fragment>
-        );
+        )
     }
 }
 
-export default TagCanvas;
+export default TagCanvas
 
 const options = {
     textColour: '#e2a298',
@@ -52,7 +52,7 @@ const options = {
     fadeIn: 3000,
     initial: [0.3, -0.1],
     depth: 0.8
-};
+}
 
 const items = [
     'HTML5',
@@ -74,18 +74,18 @@ const items = [
     'ThreeJS',
     'MySQL',
     'Material-UI',
-];
+]
 
 const getSize = () => {
     let w = window,
         d = document,
         e = d.documentElement,
         g = d.getElementsByTagName('body')[0],
-        x = w.innerWidth || e.clientWidth || g.clientWidth;
+        x = w.innerWidth || e.clientWidth || g.clientWidth
 
     if (x < 960) {
-        return 300;
+        return 300
     } else {
-        return 700;
+        return 700
     }
-};
+}

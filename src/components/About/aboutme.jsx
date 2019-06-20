@@ -1,7 +1,7 @@
-import React from 'react';
-import Header from '../UI/Header/Header';
-import classes from './About.module.scss';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import Header from '../UI/Header/Header'
+import classes from './About.module.scss'
+import { Link } from 'react-router-dom'
 
 const About = () => {
     return (
@@ -39,12 +39,12 @@ const About = () => {
                     </p>
                 </div>
                 <div className={classes.ImageArea}>
-					<img className="card-picture" src="../assets/img/perso/elisa.jpg" alt="Profil Icon"/>
+					<img className={classes.profilIcon} src="../assets/img/perso/elisa.jpg" alt="Profil Icon"/>
 					<img className={classes.qrCodeMobile} id="qrcode" src="../assets/img/perso/QR_CV.png" alt="qr-code" />
 					Check more!
                 </div>
             </div>
-    );
-};
+    )
+}
 
-export default About;
+export default About

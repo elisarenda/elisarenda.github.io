@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import './App.css';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import Main from './components/main';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react'
+import './App.css'
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl'
+import Main from './components/main'
+import { Link } from 'react-router-dom'
 class App extends Component {
 
 	componentDidMount() {
 		this.effect = window.VANTA.NET({
-		  el: "#landing-grid",
+		  el: '#landing-grid',
 			color: 0xc88e82,
 			backgroundColor: 0x2a292f,
 			points: 5.00,
@@ -28,15 +28,13 @@ class App extends Component {
 					<Header 
 						className="header-color" 
 						title={
-								<Link 
-									className="menu-button"
-									to="/">
-									<img className="logo" src='../assets/img/perso/logo.png' alt="logo"/>
+								<Link className="menu-button" to="/">
+									<img className="logo" src="../assets/img/perso/logo.png" alt="logo"/>
 									elisa
 								</Link>
 						} 
 						scroll
-					>
+						>
 						<Navigation className="navigation-bar">
 							<Link className="linkNavBar" to="/about">About</Link>
 							<Link className="linkNavBar" to="/skills">Skills</Link>
@@ -45,8 +43,9 @@ class App extends Component {
 						</Navigation>
 					</Header>
 					<Drawer
-						title={ <Link style={{textDecoration: 'none', color: '#906b7d', fontFamily: 'Sofia-Regular'}} to="/">
-									<img className="elisa-img" src='../assets/img/perso/elisa.JPG' alt="logo"/> 
+						title={ 
+								<Link style={{textDecoration: 'none', color: '#906b7d', fontFamily: 'Sofia-Regular'}} to="/">
+									<img className="elisa-img" src="../assets/img/perso/elisa.JPG" alt="logo"/> 
 									Elisa
 								</Link>}>
 						<Navigation className="link-drawer">
@@ -61,8 +60,8 @@ class App extends Component {
 					</Content>
 				</Layout>
 			</div>
-		);
+		)
   	}
 }
 
-export default App;
+export default App

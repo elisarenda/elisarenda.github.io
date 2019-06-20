@@ -1,6 +1,6 @@
-import React from 'react';
-import ShowCase from './ShowCase/ShowCase';
-import classes from './Works.module.scss';
+import React from 'react'
+import ShowCase from './ShowCase/ShowCase'
+import classes from './Works.module.scss'
 
 const works = () => {
     return (
@@ -10,7 +10,7 @@ const works = () => {
                 <ShowCase />
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default works;
+export default works

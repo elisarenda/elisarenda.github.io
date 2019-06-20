@@ -14,24 +14,24 @@ class Form extends Component {
         this.props.onChange({[e.target.name]: e.target.value})
         this.setState({
             [e.target.name]: e.target.value
-        });
+        })
     };
 
     onSubmit = (e) => {
         e.preventDefault()
         // this.props.onSubmit(this.state);
         this.setState({
-            name: "",
-            email: "",
-            subject: "",
-            message: ""
-        });
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+        })
 
         this.props.onChange({
-            name: "",
-            email: "",
-            subject: "",
-            message: ""
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
         })
         // console.log(this.state)
     }
@@ -91,4 +91,4 @@ class Form extends Component {
     }
 }
 
-export default Form;
+export default Form

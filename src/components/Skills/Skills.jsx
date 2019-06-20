@@ -1,8 +1,8 @@
-import React from 'react';
-import classes from './Skills.module.scss';
-import TagCanvas from '../UI/TagCanvas/TagCanvas';
-import { Link } from 'react-router-dom';
-import Header from '../UI/Header/Header';
+import React from 'react'
+import classes from './Skills.module.scss'
+import TagCanvas from '../UI/TagCanvas/TagCanvas'
+import { Link } from 'react-router-dom'
+import Header from '../UI/Header/Header'
 
 const skills = () => {
     return (
@@ -33,7 +33,7 @@ const skills = () => {
                     <TagCanvas />
                 </div>
             </div>
-    );
-};
+    )
+}
 
-export default skills;
+export default skills
