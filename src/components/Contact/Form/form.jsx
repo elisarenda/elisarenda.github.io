@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import classes from '../Contact.module.scss'
 
 class Form extends Component {
 
     state = {
-        firstName: '',
-        lastName: '',
+        name: '',
         email: '',
+        subject: '',
         message: ''
     }
 
@@ -20,16 +21,16 @@ class Form extends Component {
         e.preventDefault()
         // this.props.onSubmit(this.state);
         this.setState({
-            firstName: "",
-            lastName: "",
+            name: "",
             email: "",
+            subject: "",
             message: ""
         });
 
         this.props.onChange({
-            firstName: "",
-            lastName: "",
+            name: "",
             email: "",
+            subject: "",
             message: ""
         })
         // console.log(this.state)
@@ -37,53 +38,55 @@ class Form extends Component {
 
     render() {
         return (
-
-            <div id="feedback-form">
-            <div>
-              <form>
-                    <div className="contact-name">
-                        <div className="contact-firstname">
+            <form>
+                    <div>
+                        <div className={classes.InputWrapper}>
                             <input 
                                 type="text" 
-                                name="firstName" 
-                                value={this.state.firstName} 
+                                name="name" 
+                                value={this.state.name} 
                                 onChange={e => this.change(e)}
-                                placeholder="First name">
-                            </input>
+                                placeholder="Name" 
+                                />
+                            <span />
                         </div>
-                        <div className="contact-lastname">
+                        <div className={classes.InputWrapper}>
                             <input 
                                 type="text" 
-                                name="lastName" 
-                                value={this.state.lastName} 
+                                name="email"
+                                value={this.state.email} 
                                 onChange={e => this.change(e)}
-                                placeholder="Last name">
-                            </input>
+                                placeholder="Email" />
+                            <span />
                         </div>
                     </div>
-                    <input 
-                        name="email" 
-                        type="text"
-                        value={this.state.email} 
-                        onChange={e => this.change(e)} 
-                        placeholder="Email">
-                    </input>
-                    <textarea 
-                        type="text" 
-                        style={{height:'125px'}}
-                        name="message"
-                        value={this.state.message} 
-                        onChange={e => this.change(e)} 
-                        placeholder="Message">
-                    </textarea>
-                    <button 
-                        type="submit" 
-                        onClick={(e) => this.onSubmit(e)}>
-                            Send message
+                    <div>
+                        <div className={classes.InputWrapper}>
+                            <input 
+                                type="text" 
+                                name="subject" 
+                                value={this.state.subject} 
+                                onChange={e => this.change(e)}
+                                placeholder="Subject" />
+                            <span />
+                        </div>
+                    </div>
+                    <div>
+                        <div className={classes.InputWrapper}>
+                            <textarea 
+                                type="text" 
+                                name="message" 
+                                value={this.state.firstName} 
+                                onChange={e => this.change(e)}
+                                placeholder="Message" />
+                            <span />
+                        </div>
+                    </div>
+                    <button className={classes.Submit} 
+                        type="submit">
+                        Send
                     </button>
-              </form>
-            </div>
-          </div>
+                </form>
         )
     }
 }

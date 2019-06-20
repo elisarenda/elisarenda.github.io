@@ -8,7 +8,7 @@ class Landing extends Component {
   render() {
     return(
 		<div className="landing-page" style={{width: '100%', margin: 'auto'}}>
-				<h1 style={{color: 'rgb(160, 118, 111)', fontSize:'83px', fontFamily:'PlayfairDisplay-Regular', marginBottom:'0'}}>Elisa Renda</h1>
+				<h1 className="title-landing">Elisa Renda</h1>
 				<p>Full Stack Junior Web Developer</p>
 				<div className="wrapper">
 					<ul>
