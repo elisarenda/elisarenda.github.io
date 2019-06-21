@@ -10,8 +10,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
     <script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
     <link rel="icon" href="http://www.yoursite.com/favicon.ico?v=2" />
-    <script src="https://kit.fontawesome.com/0f1e187599.js"></script>
+	<script src="https://kit.fontawesome.com/0f1e187599.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
     <body>
-    <div id="root"></div>
-  </body>
+   		<div id="root"></div>
+	</body>
+	  <!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#config-web-app -->
+
+	<script>
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+		apiKey: "AIzaSyBBkK4ijCPvyd8JYl7oxJNB7NLXyfNvwRA",
+		authDomain: "portfolio-3ee54.firebaseapp.com",
+		databaseURL: "https://portfolio-3ee54.firebaseio.com",
+		projectId: "portfolio-3ee54",
+		storageBucket: "portfolio-3ee54.appspot.com",
+		messagingSenderId: "202643876386",
+		appId: "1:202643876386:web:d95d698d7c79be2a"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	</script>
 </html>
+

@@ -1,14 +1,66 @@
+/* eslint-disable */
+
 import React, { Component } from 'react'
 import classes from '../Contact.module.scss'
+import firebaseConfig from '../../js/firebaseConfig'
 
 class Form extends Component {
 
-    state = {
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            form: [],
+            alert: false,
+            alertData: {},
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+        }
     }
+
+    showAlert(type, message) {
+        this.setState({
+          alert: true,
+          alertData: { type, message }
+        });
+        setTimeout(() => {
+          this.setState({ alert: false });
+        }, 4000)
+      }
+    
+      resetForm() {
+        this.refs.contactForm.reset();
+      }
+    
+    componentWillMount() {
+        let formRef = firebaseConfig.database().ref('form').orderByKey().limitToLast(6);
+        formRef.on('child_added', snapshot => {
+          const { name, email, object, message } = snapshot.val();
+          const data = { name, email, object, message };
+          this.setState({ form: [data].concat(this.state.form) });
+        })
+    }
+
+    sendMessage(e) {
+        e.preventDefault();
+        const params = {
+          name: this.inputName.value,
+          email: this.inputEmail.value,
+          object: this.inputObject.value,
+          message: this.textAreaMessage.value
+        };
+        if (params.name && params.email && params.object && params.message) {
+            firebaseConfig.database().ref('form').push(params).then(() => {
+                this.showAlert('success', 'Your message was sent successfull');
+            }).catch(() => {
+                this.showAlert('danger', 'Your message could not be sent');
+            });
+            this.resetForm();
+        } else {
+          this.showAlert('warning', 'Please fill the form');
+        }
 
     change = (e) => {
         this.props.onChange({[e.target.name]: e.target.value})
@@ -35,10 +87,17 @@ class Form extends Component {
         })
         // console.log(this.state)
     }
+}
 
     render() {
         return (
-            <form>
+            <div>
+        {this.state.alert && <div className={`alert alert-${this.state.alertData.type}`} role='alert'>
+          <div className='container'>
+            {this.state.alertData.message}
+          </div>
+        </div>}
+            <form onSubmit={this.sendMessage.bind(this)} ref='contactForm'>
                     <div>
                         <div className={classes.InputWrapper}>
                             <input 
@@ -47,6 +106,7 @@ class Form extends Component {
                                 value={this.state.name} 
                                 onChange={e => this.change(e)}
                                 placeholder="Name" 
+                                ref={name => this.inputName = name} />
                                 />
                             <span />
                         </div>
@@ -56,7 +116,9 @@ class Form extends Component {
                                 name="email"
                                 value={this.state.email} 
                                 onChange={e => this.change(e)}
-                                placeholder="Email" />
+                                placeholder="Email" 
+                                ref={email => this.inputEmail = email}
+                            />
                             <span />
                         </div>
                     </div>
@@ -67,7 +129,9 @@ class Form extends Component {
                                 name="subject" 
                                 value={this.state.subject} 
                                 onChange={e => this.change(e)}
-                                placeholder="Subject" />
+                                placeholder="Subject" 
+                                ref={object => this.inputObject = object} 
+                                />
                             <span />
                         </div>
                     </div>
@@ -78,6 +142,7 @@ class Form extends Component {
                                 name="message" 
                                 value={this.state.firstName} 
                                 onChange={e => this.change(e)}
+                                ref={message => this.textAreaMessage = message} 
                                 placeholder="Message" />
                             <span />
                         </div>
@@ -87,6 +152,7 @@ class Form extends Component {
                         Send
                     </button>
                 </form>
+            </div>
         )
     }
 }
