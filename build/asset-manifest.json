@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/elisarenda/portfolio-react/static/css/main.4a852dc5.chunk.css",
+    "main.js": "/elisarenda/portfolio-react/static/js/main.8560f21f.chunk.js",
+    "main.js.map": "/elisarenda/portfolio-react/static/js/main.8560f21f.chunk.js.map",
+    "runtime~main.js": "/elisarenda/portfolio-react/static/js/runtime~main.d3c7c7f1.js",
+    "runtime~main.js.map": "/elisarenda/portfolio-react/static/js/runtime~main.d3c7c7f1.js.map",
+    "static/css/2.60a6b8e0.chunk.css": "/elisarenda/portfolio-react/static/css/2.60a6b8e0.chunk.css",
+    "static/js/2.3c6009be.chunk.js": "/elisarenda/portfolio-react/static/js/2.3c6009be.chunk.js",
+    "static/js/2.3c6009be.chunk.js.map": "/elisarenda/portfolio-react/static/js/2.3c6009be.chunk.js.map",
+    "index.html": "/elisarenda/portfolio-react/index.html",
+    "precache-manifest.96bf5a59bcfdf39af46bc89490241493.js": "/elisarenda/portfolio-react/precache-manifest.96bf5a59bcfdf39af46bc89490241493.js",
+    "service-worker.js": "/elisarenda/portfolio-react/service-worker.js",
+    "static/css/2.60a6b8e0.chunk.css.map": "/elisarenda/portfolio-react/static/css/2.60a6b8e0.chunk.css.map",
+    "static/css/main.4a852dc5.chunk.css.map": "/elisarenda/portfolio-react/static/css/main.4a852dc5.chunk.css.map"
+  }
+}
