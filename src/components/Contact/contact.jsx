@@ -23,22 +23,22 @@ class Contact extends Component {
         return (
                 <div className={classes.Contact}>
                     <div className={classes.Form}>
-                    <div style={{paddingLeft:'8%'}}>
-                    <Header text="Contact me" />
-                    </div>
-                        <div className={classes.socialIcon}>
-                            <ul>
-                                <li><a href="https://www.facebook.com/renda.elisa"><i className="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://github.com/elisarenda"><i className="fab fa-github"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/elisa-renda/"><i className="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="https://www.instagram.com/rndelisa/"><i className="fab fa-instagram"></i></a></li>
-                            </ul>
+                        <div style={{paddingLeft:'8%'}}>
+                            <Header text="Contact me" />
                         </div>
-                        <p style={{color:'white', paddingTop: '8px'}}>If you have any question, please don't hesitate to contact using the form below...</p>
-                        <Form onChange={fields=> this.onChange(fields)}/>
-                        <p style={{fontSize:'10px'}}>
-							{JSON.stringify(this.state.fields, null, 2)}
- 						</p>
+                            <div className={classes.socialIcon}>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/renda.elisa"><i className="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://github.com/elisarenda"><i className="fab fa-github"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/elisa-renda/"><i className="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.instagram.com/rndelisa/"><i className="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <p style={{color:'white', paddingTop: '8px'}}>If you have any question, please don't hesitate to contact using the form below...</p>
+                            <Form onChange={fields=> this.onChange(fields)}/>
+                            <p style={{fontSize:'10px'}}>
+                                {JSON.stringify(this.state.fields, null, 2)}
+                            </p>
                     </div>
 			</div>
         )

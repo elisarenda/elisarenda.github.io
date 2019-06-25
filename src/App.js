@@ -5,17 +5,18 @@ import Main from './components/main'
 import { Link } from 'react-router-dom'
 
 class App extends Component {
-
 	componentDidMount() {
-		this.effect = window.VANTA.NET({
-		  el: '#landing-grid',
-			color: 0xc88e82,
-			backgroundColor: 0x2a292f,
-			points: 5.00,
-			maxDistance: 21.00,
-			spacing: 14.00,
-			showDots: false
-		})
+		if(window.VANTA){
+			this.effect = window.VANTA.NET({
+			  el: '#landing-grid',
+				color: 0xc88e82,
+				backgroundColor: 0x2a292f,
+				points: 5.00,
+				maxDistance: 21.00,
+				spacing: 14.00,
+				showDots: false
+			})
+		}
 	}
 
 	componentWillUnmount() {
