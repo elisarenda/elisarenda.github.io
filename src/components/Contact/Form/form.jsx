@@ -24,7 +24,7 @@ class Form extends Component {
         })
     };
 
-    handleSubmit (e) {
+    handleSubmit = (e) => {
         e.preventDefault()
         const { name, email, subject, message } = this.state
         // eslint-disable-next-line no-undef
@@ -33,27 +33,12 @@ class Form extends Component {
             email,
             subject,
             message
-        } }).then((response)=>{
+        } }).then((response) => {
             console.log(response)
         }).catch((err)=>{
             console.log(err)
         })
 
-        // this.props.handleSubmit(this.state);
-        // this.setState({
-        //     name: '',
-        //     email: '',
-        //     subject: '',
-        //     message: ''
-        // })
-
-        // this.props.onChange({
-        //     name: '',
-        //     email: '',
-        //     subject: '',
-        //     message: ''
-        // })
-        // console.log(this.state)
     }
 
     render() {
