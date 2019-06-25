@@ -2,7 +2,7 @@
   "name": "myportfoliosite",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://ElisaRenda.github.io/",
+  "homepage":"https://elisarenda.github.io/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
@@ -69,6 +69,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/elisarenda/portfolio-react/issues"
-  },
-  "homepage": "https://github.com/elisarenda/portfolio-react#readme"
+  }
 }
