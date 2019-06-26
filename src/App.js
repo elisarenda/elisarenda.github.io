@@ -37,7 +37,7 @@ class App extends Component {
 					<Header 
 						className="header-color" 
 						title={
-								<Link onClick={() => this.closeMenu()} className="menu-button" to="/">
+								<Link className="menu-button" to="/">
 									<img className="logo" src="../assets/img/perso/logo.png" alt="logo"/>
 									elisa
 								</Link>
