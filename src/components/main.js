@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import LandingPage from './Home/landingpage'
 import AboutMe from './About/aboutme'
 import Contact from './Contact/Contact'
@@ -13,6 +13,7 @@ const Main = () => (
 		<Route path="/projects" component={Works} />
 		<Route path="/skills" component={Skills} />
 		<Route path="/contact" component={Contact} />
+		<Redirect to="/"/>
 	</Switch>
 )
 
