@@ -1,3 +1,7 @@
+body {
+  background: #2a292f;
+}
+
 .header-color{
   background: transparent!important;
 }
@@ -175,8 +179,8 @@
     line-height: 66px!important
   }
 }
-@media screen and (min-width: 1025px) {
-.mdl-layout__drawer-button {
-    line-height: 63px!important
-}
-}
+@media screen and (max-width: 1025px) {
+  .mdl-layout__drawer-button {
+    color:white!important;
+  }
+} 

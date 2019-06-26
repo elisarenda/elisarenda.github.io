@@ -23,6 +23,13 @@ class App extends Component {
 		if (this.effect) this.effect.destroy()
 	}
 
+	closeMenu(){
+		const offset = document.querySelector('.mdl-layout__obfuscator')
+		if(offset){
+			offset.click()
+		}
+	}
+
   	render() {
 		return (
 			<div className="App" id="landing-grid">
@@ -30,7 +37,7 @@ class App extends Component {
 					<Header 
 						className="header-color" 
 						title={
-								<Link className="menu-button" to="/">
+								<Link onClick={() => this.closeMenu()} className="menu-button" to="/">
 									<img className="logo" src="../assets/img/perso/logo.png" alt="logo"/>
 									elisa
 								</Link>
@@ -38,23 +45,23 @@ class App extends Component {
 						scroll
 						>
 						<Navigation className="navigation-bar">
-							<Link className="linkNavBar" to="/about">About</Link>
-							<Link className="linkNavBar" to="/skills">Skills</Link>
-							<Link className="linkNavBar" to="/projects">Projects</Link>
-							<Link className="linkNavBar" to="/contact">Contact</Link>
+							<Link onClick={() => this.closeMenu()} className="linkNavBar" to="/about">About</Link>
+							<Link onClick={() => this.closeMenu()} className="linkNavBar" to="/skills">Skills</Link>
+							<Link onClick={() => this.closeMenu()} className="linkNavBar" to="/projects">Projects</Link>
+							<Link onClick={() => this.closeMenu()} className="linkNavBar" to="/contact">Contact</Link>
 						</Navigation>
 					</Header>
 					<Drawer
 						title={ 
-								<Link style={{textDecoration: 'none', color: '#906b7d', fontFamily: 'Sofia-Regular'}} to="/">
+								<Link onClick={() => this.closeMenu()} style={{textDecoration: 'none', color: '#906b7d', fontFamily: 'Sofia-Regular'}} to="/">
 									<img className="elisa-img" src="../assets/img/perso/elisa.JPG" alt="logo"/> 
 									Elisa
 								</Link>}>
 						<Navigation className="link-drawer">
-							<Link to="/about">About</Link>
-							<Link to="/skills">Skills</Link>
-							<Link to="/projects">Projects</Link>
-							<Link to="/contact">Contact</Link>
+							<Link onClick={() => this.closeMenu()} to="/about">About</Link>
+							<Link onClick={() => this.closeMenu()} to="/skills">Skills</Link>
+							<Link onClick={() => this.closeMenu()} to="/projects">Projects</Link>
+							<Link onClick={() => this.closeMenu()} to="/contact">Contact</Link>
 						</Navigation>
 					</Drawer>
 					<Content>
