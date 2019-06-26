@@ -43,7 +43,7 @@
     "lint": "eslint --ext .js,.jsx .",
     "fix": "eslint --ext .js,.jsx . --fix",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "browserslist": {
     "production": [
