@@ -2,14 +2,14 @@
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    padding: 0 40px;
+    padding: 12% 10px 0px 10px;
     animation: pageLoad 1s;
 
     .Form {
         flex: 1;
 
         form {
-              width: 65%;
+              width: 80%;
               margin: auto;
 
             div {
@@ -161,9 +161,19 @@
 
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 960px) {
     .Map {
         display: none;
+    }
+    .Contact {
+        padding: 0;
+        
+        .Form {
+
+            form {
+                width: 65%
+            }
+        }
     }
 }
 

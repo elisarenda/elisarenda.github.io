@@ -27,7 +27,7 @@ class App extends Component {
 		const offset = document.querySelector('.mdl-layout__obfuscator')
 		if(offset){
 			offset.click()
-		}
+		} 
 	}
 
   	render() {
@@ -45,10 +45,10 @@ class App extends Component {
 						scroll
 						>
 						<Navigation className="navigation-bar">
-							<Link onClick={() => this.closeMenu()} className="linkNavBar" to="/about">About</Link>
-							<Link onClick={() => this.closeMenu()} className="linkNavBar" to="/skills">Skills</Link>
-							<Link onClick={() => this.closeMenu()} className="linkNavBar" to="/projects">Projects</Link>
-							<Link onClick={() => this.closeMenu()} className="linkNavBar" to="/contact">Contact</Link>
+							<Link className="linkNavBar" to="/about">About</Link>
+							<Link className="linkNavBar" to="/skills">Skills</Link>
+							<Link className="linkNavBar" to="/projects">Projects</Link>
+							<Link className="linkNavBar" to="/contact">Contact</Link>
 						</Navigation>
 					</Header>
 					<Drawer

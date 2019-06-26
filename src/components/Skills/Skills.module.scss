@@ -11,6 +11,7 @@
         margin-bottom: 40px;
         color:white;
         text-align: left;
+        padding-top: 15%;
     }
 
     .Journey {
@@ -42,7 +43,12 @@
             flex: 1;
             margin-bottom: 0;
         }
+
+        .TextArea {
+            padding-top: 0;
+        }
     }
+    
 }
 
 @keyframes pageLoad {

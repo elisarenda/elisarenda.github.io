@@ -8,9 +8,36 @@ body {
 
 .title-landing {
   color: rgb(160, 118, 111);
-  font-size:83px;
+  font-size:60px;
   font-family: PlayfairDisplay-Regular; 
   margin-bottom:0;
+}
+
+.landing-page {
+  height: 14em;
+  position: absolute;
+  top: 45%;
+  transform: translate(0, -50%);
+  text-align: center;
+  color:white;
+}
+
+.landing-page p {
+  font-size: 1.3rem!important;
+  font-family: Raleway-ExtraLight;
+}
+
+@media screen and (min-width: 960px) {
+  .title-landing {
+    font-size: 83px;
+  }
+
+  .landing-page p {
+    margin-bottom: 0!important;
+    font-size: 1.6rem!important;
+    padding: 5px!important;
+    font-family: Raleway-ExtraLight;
+  }
 }
 
 .mdl-tabs__tab-bar{
@@ -33,21 +60,6 @@ body {
   font-size:15px!important
 }
 
-.landing-page {
-  height: 14em;
-  position: absolute;
-  top: 45%;
-  transform: translate(0, -50%);
-  text-align: center;
-  color:white;
-}
-
-.landing-page p {
-  margin-bottom: 0!important;
-  font-size: 1.6rem!important;
-  padding: 5px!important;
-  font-family: Raleway-ExtraLight;
-}
 
 
 .linkNavBar::before {
