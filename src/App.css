@@ -118,16 +118,6 @@
   color: white;
 }
 
-#qrcode{
-  animation: bounce 1.55s ease infinite alternate;
-  padding-top: 100%
-}
-
-@keyframes bounce{
-  from {transform: translateY(18px);}
-  to   {transform: translateY(8px);}
-}
-
 .wrapper ul {
   display: flex;
   justify-content:center; 
