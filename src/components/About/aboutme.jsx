@@ -40,7 +40,7 @@ const About = () => {
                 </div>
                 <div className={classes.ImageArea}>
 					<img className={classes.profilIcon} src="/assets/img/perso/elisa.JPG" alt="Profil Icon"/>
-					<img className={classes.qrCodeMobile} id="qrcode" src="/assets/img/perso/QR_CV.png" alt="qr-code" />
+					<img className={classes.qrCodeMobile} src="/assets/img/perso/QR_CV.png" alt="qr-code" />
 					Check more!
                 </div>
             </div>
