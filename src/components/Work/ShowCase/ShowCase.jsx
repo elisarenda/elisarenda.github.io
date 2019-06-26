@@ -131,7 +131,7 @@ const projects = [
         category: [categories.fevrier]
      },
      {
-        thumb: '../../assets/img/work/404page.png',
+        thumb: '../../assets/img/work/404Page.png',
         github: 'https://github.com/elisarenda/404-Page',
         name: '404 Error',
         categoryDisplay: 'HTML/CSS',
