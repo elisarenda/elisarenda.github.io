@@ -19,7 +19,7 @@ const skills = () => {
                     </p>
 
                     <p className={classes.Journey}>
-                        I have also some experience working with databases like mySQL, MongoBD or Firebase.
+                        I have also some experience working with databases like mySQL or Firebase.
                     </p>
 
                     <p className={classes.Journey}>
