@@ -25,7 +25,7 @@ class Form extends Component {
     };
 
     handleSubmit = (e) => {
-        // e.preventDefault()
+        e.preventDefault()
         const { name, email, subject, message } = this.state
         // eslint-disable-next-line no-undef
         axios.get(`${process.env.NODE_ENV === 'development' ? 'http://localhost:3001' : 'https://arcane-cliffs-98895.herokuapp.com'}/api/form`, { params: {
