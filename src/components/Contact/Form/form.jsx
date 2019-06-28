@@ -12,6 +12,7 @@ class Form extends Component {
             email: '',
             subject: '',
             message: '',
+            send: false,
         }
         this.change = this.change.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -91,9 +92,7 @@ class Form extends Component {
                             </div>
                         </div>
                         
-                        <button
-                        className={classes.Submit} 
-                            type="submit">
+                        <button className={classes.Submit} type="submit">
                             Send
                         </button>
                     </form>
