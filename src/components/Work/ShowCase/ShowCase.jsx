@@ -32,7 +32,6 @@ class ShowCase extends Component {
         const cards = projects.map((prj, idx) => {
             return (
                 <div key={idx} className={['mix', ...prj.category].join(' ')}>
-                    <div className="projectPictures"/>
                     <img src={prj.thumb} alt="project thumbnail" />
                     <div className="links">
                         {prj.inprogress ? 

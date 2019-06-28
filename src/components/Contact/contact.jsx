@@ -33,7 +33,7 @@ class Contact extends Component {
                                     <li><a href="https://www.linkedin.com/in/elisa-renda/"><i className="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
-                            <p style={{color:'white', paddingTop: '8px'}}>If you have any question, please don't hesitate to contact using the form below...</p>
+                            <p style={{color:'white', paddingTop: '8px'}}>If you have any question, please don't hesitate to contact using the form below.</p>
                             <Form onChange={fields=> this.onChange(fields)}/>
                             {/* <p style={{fontSize:'10px'}}>
                                 {JSON.stringify(this.state.fields, null, 2)}

@@ -10,12 +10,10 @@ const skills = () => {
                 <div className={classes.TextArea}>
 				<Header text="Skills / Experiences" />
                     <p className={classes.Journey}>
-                        Main area of my expertise is front end development and everything related with web development.
-                        HTML, CSS, JS (ES5, ES6), building small & medium Web Apps, React.
+                    Main area of my expertise is front end development and everything related with web development. HTML, CSS, JS (ES5, ES6), building small & medium Web Apps, React.
                     </p>
                     <p className={classes.Journey}>
-                        Often I work as a full-stack developer - mainly in Javascript or Node with framework ReactJS,
-                        VueJS.
+                        I work most of the time as a full stack developer - mainly in Javascript with frameworks like ReactJS or VueJS.
                     </p>
 
                     <p className={classes.Journey}>
@@ -25,7 +23,7 @@ const skills = () => {
                     <p className={classes.Journey}>
                         Would like to know more?
                         <br />
-                        Just <Link to="/contact">contact</Link> me.
+                        <Link to="/contact">Contact</Link> me.
                     </p>
                 </div>
 
