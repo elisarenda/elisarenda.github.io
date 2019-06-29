@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Lion as Button } from 'react-button-loaders'
 import classes from '../Contact.module.scss'
 import axios from 'axios'
 
@@ -12,7 +13,7 @@ class Form extends Component {
             email: '',
             subject: '',
             message: '',
-            send: false,
+            sendState: ''
         }
         this.change = this.change.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -39,8 +40,14 @@ class Form extends Component {
         }).catch((err)=>{
             console.log(err)
         })
-
     }
+
+    handleClick = () => {
+        this.setState({sendState: 'loading'})
+        setTimeout(() => {
+          this.setState({sendState: 'finished'})
+        }, 3000)
+      }    
 
     render() {
         return (
@@ -91,10 +98,19 @@ class Form extends Component {
                                 <span />
                             </div>
                         </div>
-                        
+                                                
                         <button className={classes.Submit} type="submit">
                             Send
                         </button>
+                        {/* <Button 
+                            className={classes.Submit} 
+                            onClick={this.handleClick} 
+                            state={this.state.sendState}
+                            bgColor="#2a292f"
+                            bgLoading="#bf8980"
+                            bgLoadingBehind="#2a292f"
+                            bgWhenFinish="#2a292f"
+                            >Send</Button> */}
                     </form>
             </div>
         )

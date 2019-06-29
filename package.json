@@ -29,6 +29,7 @@
     "nodemon": "^1.19.1",
     "react": "^16.8.6",
     "react-awesome-button": "^6.1.2",
+    "react-button-loaders": "0.0.1",
     "react-dom": "^16.2.0",
     "react-google-maps": "^9.4.5",
     "react-icons": "^2.2.7",
