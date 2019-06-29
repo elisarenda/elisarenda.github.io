@@ -102,15 +102,6 @@ class Form extends Component {
                         <button className={classes.Submit} type="submit">
                             Send
                         </button>
-                        {/* <Button 
-                            className={classes.Submit} 
-                            onClick={this.handleClick} 
-                            state={this.state.sendState}
-                            bgColor="#2a292f"
-                            bgLoading="#bf8980"
-                            bgLoadingBehind="#2a292f"
-                            bgWhenFinish="#2a292f"
-                            >Send</Button> */}
                     </form>
             </div>
         )
