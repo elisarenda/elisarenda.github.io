@@ -13,10 +13,11 @@ class Form extends Component {
             email: '',
             subject: '',
             message: '',
-            sendState: ''
+            isSend: true
         }
         this.change = this.change.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleClick = this.handleClick.bind(this)
     }
 
     change = (e) => {
@@ -42,11 +43,10 @@ class Form extends Component {
         })
     }
 
-    handleClick = () => {
-        this.setState({sendState: 'loading'})
-        setTimeout(() => {
-          this.setState({sendState: 'finished'})
-        }, 3000)
+    handleClick () {
+        this.setState(state => ({
+            isSend: !state.isSend
+        }))
       }    
 
     render() {
@@ -99,8 +99,10 @@ class Form extends Component {
                             </div>
                         </div>
                                                 
-                        <button className={classes.Submit} type="submit">
-                            Send
+                        <button onClick={this.handleClick} 
+                                className={classes.Submit} 
+                                type="submit">
+                                    {this.state.isSend ? 'Send' : '✔'}
                         </button>
                     </form>
             </div>
