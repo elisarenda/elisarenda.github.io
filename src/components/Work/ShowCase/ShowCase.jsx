@@ -3,8 +3,8 @@ import './ShowCase.scss'
 import mixitup from 'mixitup'
 import $ from 'jquery'
 
-
 class ShowCase extends Component {
+
     componentDidMount() {
         const firstTab = document.getElementsByClassName('filter')[0]
         this.posFilterBar(firstTab)
@@ -45,6 +45,7 @@ class ShowCase extends Component {
                 </div>
             )
         })
+        
         const tabs = Object.keys(categories).map(key => {
             return (
                 <div key={key} className="filter" data-filter={`.${categories[key]}`} onClick={this.changeTab}>
@@ -52,6 +53,7 @@ class ShowCase extends Component {
                 </div>
             )
         })
+
         return (
             <div className="showcase">
                 <div className="filter-wrap">
@@ -70,7 +72,6 @@ class ShowCase extends Component {
                         </div>
                     </div>
                 </div>
-
                 <div className="showcase-container">{cards}</div>
             </div>
         )

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Lion as Button } from 'react-button-loaders'
 import classes from '../Contact.module.scss'
 import axios from 'axios'
 
@@ -25,12 +24,11 @@ class Form extends Component {
         this.setState({
             [e.target.name]: e.target.value
         })
-    };
+    }
 
     handleSubmit = (e) => {
         e.preventDefault()
         const { name, email, subject, message } = this.state
-        // eslint-disable-next-line no-undef
         axios.get(`${process.env.NODE_ENV === 'development' ? 'http://localhost:3001' : 'https://arcane-cliffs-98895.herokuapp.com'}/api/form`, { params: {
             name,
             email,
