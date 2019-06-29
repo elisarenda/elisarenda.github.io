@@ -20,7 +20,7 @@ const About = () => {
                         As much as I love to do {' '}
                         <a href="https://www.facebook.com/CrossFitExit8/" target="_blank" rel="noopener noreferrer">
                             Crossfit
-                        </a> {' '} in my spare hours, I love to connect to people by coding. I do have the ambition to deliver excellent work, a strong work ethic and the willingness to constantly learn and grow.
+                        </a> {' '} in my spare time, I love to connect to people by coding. I do have the ambition to deliver excellent work, a strong work ethic and the willingness to constantly learn and grow.
                     </p>
                     <div className={classes.Journey}>
                         My aspiration is to learn to create great applications that are simple, functional, beautiful and fun to work with. Together in an uplifting team of developers.
