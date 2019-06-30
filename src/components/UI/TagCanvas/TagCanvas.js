@@ -40,7 +40,7 @@ export default TagCanvas
 const options = {
     textColour: '#e2a298',
     outlineThickness: 0.5,
-    outlineColour: '#bf8980',
+    outlineColour: '#e2a298',
     maxSpeed: 0.06,
     freezeActive: true,
     shuffleTags: true,
