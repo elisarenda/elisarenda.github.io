@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './ShowCase.scss'
 import mixitup from 'mixitup'
 import $ from 'jquery'
-
 class ShowCase extends Component {
 
     componentDidMount() {
@@ -45,7 +44,7 @@ class ShowCase extends Component {
                 </div>
             )
         })
-        
+
         const tabs = Object.keys(categories).map(key => {
             return (
                 <div key={key} className="filter" data-filter={`.${categories[key]}`} onClick={this.changeTab}>
@@ -86,9 +85,17 @@ const categories = {
     mars: 'March',
     avril: 'April',
     mai: 'May',
+    juin: 'June'
 }
 
 const projects = [
+    {
+        thumb: '../../assets/img/work/elisaProject.png',
+        github: 'https://github.com/elisarenda/elisarenda.github.io',
+        name: 'Portfolio',
+        categoryDisplay: 'HTML/CSS/ReactJS/ThreeJS/Jquery',
+        category: [categories.juin]
+     },
     {
         thumb: '../../assets/img/work/laMoelle.png',
         github: 'https://github.com/elisarenda/PiloteMedia-LaMoelle',
